@@ -78,16 +78,17 @@ http://127.0.0.1:8000/docs
 
 ## Project Structure
 
-├── app/
-│   ├── main.py          # FastAPI initialization & route inclusion
-│   ├── models.py        # SQLAlchemy database schemas
-│   ├── schemas.py       # Pydantic data validation schemas
-│   ├── crud.py          # Database operations (CREATE, READ)
-│   ├── database.py      # Engine and Session local setup
-│   ├── parser.py        # Hybrid parsing logic (Regex + Groq)
-│   └── routers/         # Route definitions (/auth, /resume)
-├── uploads/             # Ignored local disk storage
+```text
+├── routers/             # API Route definitions (/auth, /resume)
+├── config.py            # Environment & app configurations
+├── crud.py              # Database CRUD operations
+├── database.py          # SQLAlchemy engine & session setup
+├── main.py              # FastAPI app initialization & endpoint routing
+├── models.py            # SQLAlchemy database models
+├── parser.py            # Hybrid parsing logic (Regex + Groq LLaMA)
+├── schemas.py           # Pydantic validation schemas
+├── security.py          # Password hashing & JWT helper utilities
 ├── .env.example         # Environment template
-├── .gitignore           # Git ignore configurations
-├── requirements.txt     # Dependency list
-└── README.md            # Documentation
+├── .gitignore           # Git ignore settings
+├── requirements.txt     # Python project dependencies
+└── README.md            # Project documentation
