@@ -33,22 +33,66 @@ class User(Base):
 
 
 class StudentProfile(Base):
-
     __tablename__ = "student_profiles"
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    user_id: Mapped[uuid.UUID] = mapped_column(
-        ForeignKey("users.id", ondelete="CASCADE"), unique=True, nullable=False
+    id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        primary_key=True,
+        default=uuid.uuid4
     )
-    
-    phone_number: Mapped[str | None] = mapped_column(String(20), nullable=True)
-    address: Mapped[str | None] = mapped_column(String(255), nullable=True)
-    college: Mapped[str | None] = mapped_column(String(150), nullable=True)
-    branch: Mapped[str | None] = mapped_column(String(100), nullable=True)
-    graduation_year: Mapped[int | None] = mapped_column(Integer, nullable=True)
-    bio: Mapped[str | None] = mapped_column(String(500), nullable=True)
 
-    user: Mapped["User"] = relationship(back_populates="profile")
+    user_id: Mapped[uuid.UUID] = mapped_column(
+        ForeignKey("users.id", ondelete="CASCADE"),
+        unique=True,
+        nullable=False
+    )
+
+    full_name: Mapped[str | None] = mapped_column(
+        String(150),
+        nullable=True
+    )
+
+    email: Mapped[str | None] = mapped_column(
+        String(255),
+        nullable=True
+    )
+
+    phone: Mapped[str | None] = mapped_column(
+        String(20),
+        nullable=True
+    )
+
+    address: Mapped[str | None] = mapped_column(
+        String(255),
+        nullable=True
+    )
+
+    linkedin: Mapped[str | None] = mapped_column(
+        String(500),
+        nullable=True
+    )
+
+    github: Mapped[str | None] = mapped_column(
+        String(500),
+        nullable=True
+    )
+
+    summary: Mapped[str | None] = mapped_column(
+        String(2000),
+        nullable=True
+    )
+
+    technical_skills = Column(JSON, nullable=True)
+    soft_skills = Column(JSON, nullable=True)
+    education = Column(JSON, nullable=True)
+    work_experience = Column(JSON, nullable=True)
+    projects = Column(JSON, nullable=True)
+    internships = Column(JSON, nullable=True)
+    certifications = Column(JSON, nullable=True)
+
+    user: Mapped["User"] = relationship(
+        back_populates="profile"
+    )
 
 
 class RefreshToken(Base):
@@ -68,6 +112,48 @@ class RefreshToken(Base):
 class Resume(Base):
 
     __tablename__ = "resumes"
+    @property
+    def skills(self):
+        if hasattr(self,"parsed_data") and isinstance(self.parsed_data, dict):
+            skills_data=self.parsed_data.get("skills")
+            if isinstance(skills_data, list):
+                return ", ".join(skills_data)
+            elif isinstance(skills_data, dict):
+                flat_skills=[]
+                for category_skills in skills_data.values():
+                    if isinstance(category_skills, list):
+                        flat_skills.extend(category_skills)
+                    elif isinstance(category_skills,str):
+                        flat_skills.append(category_skills)
+                return ", ".join(flat_skills)
+            elif isinstance(skills_data,str):
+                return skills_data
+        return getattr(self, "skills_text", None)
+
+    @property
+    def education(self):
+        if hasattr(self, "parsed_data") and isinstance(self.parsed_data, dict):
+            edu = self.parsed_data.get("education")
+            if isinstance(edu, list):
+                return " ".join(str(e) for e in edu)
+            return edu
+        return getattr(self, "education_text", None)
+
+    @property
+    def professional_summary(self):
+        if hasattr(self, "parsed_data") and isinstance(self.parsed_data, dict):
+            return self.parsed_data.get("summary") or self.parsed_data.get("professional_summary")
+        return getattr(self, "summary", None)
+
+    @property
+    def extracted_text(self):
+        return getattr(self, "raw_text", None) or getattr(self, "text", None)
+
+    @property
+    def location(self):
+        if hasattr(self, "parsed_data") and isinstance(self.parsed_data, dict):
+            return self.parsed_data.get("location")
+        return getattr(self, "location_text", None)
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     user_id: Mapped[uuid.UUID] = mapped_column(

@@ -1,0 +1,3962 @@
+[
+  {
+    "id": "20da6535-5af9-4909-a532-44ac32097b12",
+    "company": "Basecrest Ventures Inc",
+    "role_title": "Application Security Intern",
+    "domain": "Cybersecurity",
+    "location": "Pune, India",
+    "mode": "Onsite",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 8000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "Linux",
+      "Networking",
+      "Problem Solving",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "Docker"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our e-commerce marketplace systems."
+  },
+  {
+    "id": "d19e5daf-3017-4eaf-8566-66411f0236a3",
+    "company": "Quantumly Systems Pvt Ltd",
+    "role_title": "Software Engineering Intern",
+    "domain": "Software Development",
+    "location": "Kochi, India",
+    "mode": "Onsite",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "Algorithms",
+      "C++",
+      "Data Structures",
+      "REST API",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "FastAPI"
+    ],
+    "description": "Work with the engineering team to design, build, and test features for our production payments gateway. You'll pair with senior engineers, write clean code, and ship real features used by customers."
+  },
+  {
+    "id": "0162fc28-2384-4b57-ace1-4b1c74620f79",
+    "company": "Amberline Technologies LLP",
+    "role_title": "Business Analyst Intern",
+    "domain": "Business Analysis",
+    "location": "Mumbai, India",
+    "mode": "Onsite",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "Communication",
+      "Data Analysis",
+      "Excel",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "JIRA",
+      "Power BI"
+    ],
+    "description": "Analyze business processes and data to recommend improvements for our recommendation engine operations."
+  },
+  {
+    "id": "a4de4071-2b39-4e58-8340-441e84b58c78",
+    "company": "Meridian Systems",
+    "role_title": "Cloud Engineering Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Hyderabad, India",
+    "mode": "Hybrid",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 15000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Docker",
+      "Git",
+      "Linux"
+    ],
+    "preferred_skills": [
+      "Azure",
+      "Monitoring"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our customer analytics platform infrastructure."
+  },
+  {
+    "id": "3e575579-6e01-47d0-914c-434386738dac",
+    "company": "Basecrest Software LLP",
+    "role_title": "Cybersecurity Intern",
+    "domain": "Cybersecurity",
+    "location": "Ahmedabad, India",
+    "mode": "Hybrid",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 15000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Linux",
+      "Networking",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "CI/CD",
+      "Docker",
+      "Git"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our recommendation engine systems."
+  },
+  {
+    "id": "a1249f3f-77bc-486b-b93f-e0dabea1de91",
+    "company": "Cascade Solutions Pvt Ltd",
+    "role_title": "Application Security Intern",
+    "domain": "Cybersecurity",
+    "location": "Jaipur, India",
+    "mode": "Hybrid",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 8000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "Linux",
+      "Networking",
+      "Problem Solving",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "CI/CD",
+      "Docker"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our customer analytics platform systems."
+  },
+  {
+    "id": "88d83f75-00b0-4f5e-b564-378695d02be5",
+    "company": "Bluepeak Digital Pvt Ltd",
+    "role_title": "iOS Developer Intern",
+    "domain": "Mobile Development",
+    "location": "Hyderabad, India",
+    "mode": "Onsite",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Git",
+      "Java",
+      "Kotlin",
+      "REST API",
+      "Swift"
+    ],
+    "preferred_skills": [
+      "CI/CD",
+      "Firebase"
+    ],
+    "description": "Build features for our e-commerce marketplace mobile app used by thousands of users, from UI polish to backend integration."
+  },
+  {
+    "id": "8dccbd48-7766-4aa2-bb3c-4f11be997987",
+    "company": "Skyfield Ventures",
+    "role_title": "Cybersecurity Intern",
+    "domain": "Cybersecurity",
+    "location": "Noida, India",
+    "mode": "Remote",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Networking",
+      "Problem Solving",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "Docker"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our logistics tracker systems."
+  },
+  {
+    "id": "e73d2845-72be-4a3d-b4f1-3a79dd902a58",
+    "company": "Lumenary Dynamics LLP",
+    "role_title": "Frontend Developer Intern",
+    "domain": "Web Development",
+    "location": "Kochi, India",
+    "mode": "Hybrid",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Bootstrap",
+      "Git",
+      "React"
+    ],
+    "preferred_skills": [
+      "Tailwind CSS",
+      "TypeScript",
+      "Vue"
+    ],
+    "description": "Build and ship user-facing features for our CRM tool web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "b2da4bce-f0bc-4aba-82a5-6c158fb733ba",
+    "company": "Nimbus Analytics Pvt Ltd",
+    "role_title": "Mobile App Developer Intern",
+    "domain": "Mobile Development",
+    "location": "Jaipur, India",
+    "mode": "Remote",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "Kotlin",
+      "REST API",
+      "Swift"
+    ],
+    "preferred_skills": [
+      "CI/CD"
+    ],
+    "description": "Build features for our payments gateway mobile app used by thousands of users, from UI polish to backend integration."
+  },
+  {
+    "id": "64f53be7-0568-4f48-806d-9270f7c8f5c9",
+    "company": "Cobalt Cloud",
+    "role_title": "Product Design Intern",
+    "domain": "UI/UX Design",
+    "location": "Chennai, India",
+    "mode": "Hybrid",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 15000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "Adobe XD",
+      "Figma",
+      "User Research",
+      "Wireframing"
+    ],
+    "preferred_skills": [
+      "Design Systems",
+      "HTML"
+    ],
+    "description": "Design intuitive, accessible interfaces for our healthtech app product, collaborating closely with engineering and product teams."
+  },
+  {
+    "id": "ca76d669-3bf8-436c-a0d9-bac1570c2efa",
+    "company": "Cascade Ventures LLP",
+    "role_title": "Software Engineering Intern",
+    "domain": "Software Development",
+    "location": "Remote",
+    "mode": "Remote",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "C++",
+      "Git",
+      "Java",
+      "JavaScript"
+    ],
+    "preferred_skills": [
+      "Django"
+    ],
+    "description": "Work with the engineering team to design, build, and test features for our production payments gateway. You'll pair with senior engineers, write clean code, and ship real features used by customers."
+  },
+  {
+    "id": "8c0620e4-b7e3-4a66-8e68-523e23cddc01",
+    "company": "Quantumly Networks Pvt Ltd",
+    "role_title": "DevOps Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Remote",
+    "mode": "Onsite",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "CI/CD",
+      "Docker",
+      "Linux"
+    ],
+    "preferred_skills": [
+      "GCP",
+      "Jenkins"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our internal developer platform infrastructure."
+  },
+  {
+    "id": "cc259f7f-a55d-47d7-b181-cf80063fbad1",
+    "company": "Trueform Dynamics Inc",
+    "role_title": "Cybersecurity Intern",
+    "domain": "Cybersecurity",
+    "location": "Jaipur, India",
+    "mode": "Onsite",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "Linux",
+      "Networking",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "AWS"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our internal developer platform systems."
+  },
+  {
+    "id": "a6fda20d-9cd2-4306-912a-278b606973a3",
+    "company": "Meridian Analytics Inc",
+    "role_title": "Site Reliability Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Kochi, India",
+    "mode": "Onsite",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "Docker",
+      "Linux",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Jenkins",
+      "Kubernetes",
+      "Terraform"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our logistics tracker infrastructure."
+  },
+  {
+    "id": "85b8071d-47cf-4d45-b4b7-8a62d99dbc26",
+    "company": "Meridian Analytics Inc",
+    "role_title": "Cybersecurity Intern",
+    "domain": "Cybersecurity",
+    "location": "Gurugram, India",
+    "mode": "Remote",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 15000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "Linux",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "Docker"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our healthtech app systems."
+  },
+  {
+    "id": "72c8b7ec-7d49-4b06-888e-d38c70283a00",
+    "company": "Granite AI Pvt Ltd",
+    "role_title": "iOS Developer Intern",
+    "domain": "Mobile Development",
+    "location": "Pune, India",
+    "mode": "Hybrid",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Git",
+      "Java",
+      "Kotlin",
+      "REST API",
+      "Swift"
+    ],
+    "preferred_skills": [
+      "CI/CD"
+    ],
+    "description": "Build features for our customer analytics platform mobile app used by thousands of users, from UI polish to backend integration."
+  },
+  {
+    "id": "e21bbdff-a0af-4365-88ea-e5ad60beae77",
+    "company": "Quantumly Software Pvt Ltd",
+    "role_title": "Java Developer Intern",
+    "domain": "Software Development",
+    "location": "Mumbai, India",
+    "mode": "Remote",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 8000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "Algorithms",
+      "C++",
+      "Git"
+    ],
+    "preferred_skills": [
+      "CI/CD"
+    ],
+    "description": "Work with the engineering team to design, build, and test features for our production edtech platform. You'll pair with senior engineers, write clean code, and ship real features used by customers."
+  },
+  {
+    "id": "7ad27714-51ef-47f5-87d7-c62692aba6be",
+    "company": "Lumenary Dynamics Inc",
+    "role_title": "Data Analyst Intern",
+    "domain": "Data Science",
+    "location": "Remote",
+    "mode": "Onsite",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Scikit-learn"
+    ],
+    "preferred_skills": [
+      "NLP",
+      "Power BI",
+      "PyTorch"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our internal developer platform team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "46c0bbf3-01ae-447a-aa2b-76ee2c7cc03e",
+    "company": "Silverline Labs",
+    "role_title": "Application Security Intern",
+    "domain": "Cybersecurity",
+    "location": "Noida, India",
+    "mode": "Hybrid",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Linux",
+      "Networking",
+      "Problem Solving",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "Git"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our payments gateway systems."
+  },
+  {
+    "id": "162b9ead-47bd-4204-a054-12efe9f8f2e6",
+    "company": "Cascade Ventures LLP",
+    "role_title": "Site Reliability Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Hyderabad, India",
+    "mode": "Hybrid",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "AWS",
+      "CI/CD",
+      "Git",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Terraform"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our internal developer platform infrastructure."
+  },
+  {
+    "id": "320b9a60-6581-49c2-8825-31d75c9c331f",
+    "company": "Brightloop Robotics",
+    "role_title": "Security Analyst Intern",
+    "domain": "Cybersecurity",
+    "location": "Kochi, India",
+    "mode": "Remote",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "Linux",
+      "Networking",
+      "Problem Solving",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "CI/CD",
+      "Docker",
+      "Git"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our internal developer platform systems."
+  },
+  {
+    "id": "f961296f-e6dc-465f-829d-8a650e581469",
+    "company": "Skyfield Ventures Pvt Ltd",
+    "role_title": "Backend Developer Intern",
+    "domain": "Software Development",
+    "location": "Kolkata, India",
+    "mode": "Hybrid",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "Algorithms",
+      "C++",
+      "Git",
+      "Java",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "CI/CD"
+    ],
+    "description": "Work with the engineering team to design, build, and test features for our production fintech app. You'll pair with senior engineers, write clean code, and ship real features used by customers."
+  },
+  {
+    "id": "676bac09-e328-4fbe-aeeb-e1e25e73c954",
+    "company": "Highfield Innovations LLP",
+    "role_title": "Cybersecurity Intern",
+    "domain": "Cybersecurity",
+    "location": "Chennai, India",
+    "mode": "Onsite",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "Networking",
+      "Problem Solving",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "CI/CD"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our customer analytics platform systems."
+  },
+  {
+    "id": "9a90c195-9bca-4b7d-9253-83366a2feb1f",
+    "company": "Wavecrest Solutions LLP",
+    "role_title": "Software Testing Intern",
+    "domain": "QA/Testing",
+    "location": "Hyderabad, India",
+    "mode": "Onsite",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Git",
+      "Problem Solving",
+      "Python",
+      "SQL",
+      "Selenium"
+    ],
+    "preferred_skills": [
+      "Docker"
+    ],
+    "description": "Design and automate test suites for our customer analytics platform platform, working with developers to catch regressions before release."
+  },
+  {
+    "id": "23bd8594-a668-4362-9ac7-e703f3a2059f",
+    "company": "Cascade Solutions Pvt Ltd",
+    "role_title": "Software Testing Intern",
+    "domain": "QA/Testing",
+    "location": "Remote",
+    "mode": "Hybrid",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "Git",
+      "Java",
+      "Problem Solving",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "CI/CD",
+      "REST API"
+    ],
+    "description": "Design and automate test suites for our fintech app platform, working with developers to catch regressions before release."
+  },
+  {
+    "id": "48197561-15d3-465f-8600-fb11b2c69cbc",
+    "company": "Bluepeak Digital Pvt Ltd",
+    "role_title": "Application Security Intern",
+    "domain": "Cybersecurity",
+    "location": "Jaipur, India",
+    "mode": "Remote",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Linux",
+      "Networking",
+      "Problem Solving",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "CI/CD",
+      "Git"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our IoT monitoring suite systems."
+  },
+  {
+    "id": "75c2af27-acca-478e-b436-9252a6ef4af9",
+    "company": "Silverline Cloud Inc",
+    "role_title": "Backend Developer Intern",
+    "domain": "Software Development",
+    "location": "Chennai, India",
+    "mode": "Remote",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "Git",
+      "Java",
+      "JavaScript",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "CI/CD",
+      "FastAPI"
+    ],
+    "description": "Work with the engineering team to design, build, and test features for our production recommendation engine. You'll pair with senior engineers, write clean code, and ship real features used by customers."
+  },
+  {
+    "id": "8a199798-b4dd-44c6-814a-dba2ad08a4ea",
+    "company": "Clearwater Solutions Inc",
+    "role_title": "Associate Product Intern",
+    "domain": "Product Management",
+    "location": "Bengaluru, India",
+    "mode": "Onsite",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Communication",
+      "Excel",
+      "Market Research",
+      "Problem Solving"
+    ],
+    "preferred_skills": [
+      "Data Analysis",
+      "SQL"
+    ],
+    "description": "Support the product team in gathering requirements, analyzing user feedback, and prioritizing the roadmap for IoT monitoring suite."
+  },
+  {
+    "id": "71aefcbd-3404-4aef-949c-0132d8e2a08b",
+    "company": "Trueform Dynamics Inc",
+    "role_title": "Mobile App Developer Intern",
+    "domain": "Mobile Development",
+    "location": "Noida, India",
+    "mode": "Hybrid",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "Git",
+      "Java",
+      "Kotlin",
+      "REST API",
+      "Swift"
+    ],
+    "preferred_skills": [
+      "CI/CD",
+      "Firebase",
+      "React Native"
+    ],
+    "description": "Build features for our internal developer platform mobile app used by thousands of users, from UI polish to backend integration."
+  },
+  {
+    "id": "5e359baa-1c59-4161-a650-c310babc74c1",
+    "company": "Wavecrest Labs",
+    "role_title": "iOS Developer Intern",
+    "domain": "Mobile Development",
+    "location": "Gurugram, India",
+    "mode": "Remote",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "Git",
+      "Java",
+      "Kotlin",
+      "Swift"
+    ],
+    "preferred_skills": [
+      "React Native",
+      "SQLite"
+    ],
+    "description": "Build features for our SaaS dashboard mobile app used by thousands of users, from UI polish to backend integration."
+  },
+  {
+    "id": "d62d297f-899b-459d-abf7-8ec369184f10",
+    "company": "Wavecrest Labs",
+    "role_title": "Site Reliability Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Jaipur, India",
+    "mode": "Remote",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 8000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "CI/CD",
+      "Docker",
+      "Linux"
+    ],
+    "preferred_skills": [
+      "Terraform"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our e-commerce marketplace infrastructure."
+  },
+  {
+    "id": "032538b6-9879-41d6-886c-ce945e008bc7",
+    "company": "Brightloop Robotics",
+    "role_title": "Data Science Intern",
+    "domain": "Data Science",
+    "location": "Chennai, India",
+    "mode": "Onsite",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "Machine Learning",
+      "Pandas",
+      "Python",
+      "Scikit-learn",
+      "Statistics"
+    ],
+    "preferred_skills": [
+      "Computer Vision",
+      "Deep Learning",
+      "PyTorch"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our CRM tool team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "e6d98633-8bb2-4ae8-af0a-7583bb0f6fe8",
+    "company": "Silverline Cloud Inc",
+    "role_title": "Product Design Intern",
+    "domain": "UI/UX Design",
+    "location": "Chennai, India",
+    "mode": "Remote",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 15000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Adobe XD",
+      "Figma",
+      "User Research",
+      "Wireframing"
+    ],
+    "preferred_skills": [
+      "Design Systems",
+      "Prototyping"
+    ],
+    "description": "Design intuitive, accessible interfaces for our recommendation engine product, collaborating closely with engineering and product teams."
+  },
+  {
+    "id": "af2c67d8-9f6f-4a57-aac3-d535393a1cc6",
+    "company": "Nimbus Analytics Pvt Ltd",
+    "role_title": "Software Testing Intern",
+    "domain": "QA/Testing",
+    "location": "Gurugram, India",
+    "mode": "Remote",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Git",
+      "Java",
+      "SQL",
+      "Selenium"
+    ],
+    "preferred_skills": [
+      "REST API"
+    ],
+    "description": "Design and automate test suites for our internal developer platform platform, working with developers to catch regressions before release."
+  },
+  {
+    "id": "78b696a7-12b2-472f-bf8b-39dc8356c2b7",
+    "company": "Basecrest Software LLP",
+    "role_title": "iOS Developer Intern",
+    "domain": "Mobile Development",
+    "location": "Noida, India",
+    "mode": "Hybrid",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "Java",
+      "Kotlin",
+      "Swift"
+    ],
+    "preferred_skills": [
+      "CI/CD"
+    ],
+    "description": "Build features for our IoT monitoring suite mobile app used by thousands of users, from UI polish to backend integration."
+  },
+  {
+    "id": "96925b11-f61f-4754-a362-bc61859e14ee",
+    "company": "Cascade Ventures LLP",
+    "role_title": "Software Testing Intern",
+    "domain": "QA/Testing",
+    "location": "Gurugram, India",
+    "mode": "Remote",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "Java",
+      "Problem Solving",
+      "SQL",
+      "Selenium"
+    ],
+    "preferred_skills": [
+      "Docker",
+      "REST API"
+    ],
+    "description": "Design and automate test suites for our SaaS dashboard platform, working with developers to catch regressions before release."
+  },
+  {
+    "id": "178848d1-8b0d-4738-af48-a01169803b0f",
+    "company": "Clearwater Solutions",
+    "role_title": "Backend Developer Intern",
+    "domain": "Software Development",
+    "location": "Chennai, India",
+    "mode": "Hybrid",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "JavaScript",
+      "REST API",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "Docker"
+    ],
+    "description": "Work with the engineering team to design, build, and test features for our production payments gateway. You'll pair with senior engineers, write clean code, and ship real features used by customers."
+  },
+  {
+    "id": "14145a6d-de66-4249-8ed3-ecd712f02bad",
+    "company": "Meridian Systems",
+    "role_title": "UI Engineering Intern",
+    "domain": "Web Development",
+    "location": "Chennai, India",
+    "mode": "Onsite",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "CSS",
+      "Git",
+      "JavaScript",
+      "REST API",
+      "React"
+    ],
+    "preferred_skills": [
+      "GraphQL",
+      "Node.js",
+      "Vue"
+    ],
+    "description": "Build and ship user-facing features for our recommendation engine web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "4fab397d-c280-4061-9af0-d9b2a8a74435",
+    "company": "Meridian Systems",
+    "role_title": "Data Science Intern",
+    "domain": "Data Science",
+    "location": "Chennai, India",
+    "mode": "Onsite",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "Data Analysis",
+      "Pandas",
+      "Statistics"
+    ],
+    "preferred_skills": [
+      "Computer Vision",
+      "Power BI",
+      "Tableau"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our recommendation engine team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "652df571-d1e1-4a55-a96e-8bb327e9ee6e",
+    "company": "Fernwood Digital",
+    "role_title": "Web Developer Intern",
+    "domain": "Web Development",
+    "location": "Chennai, India",
+    "mode": "Onsite",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "CSS",
+      "Git",
+      "HTML",
+      "JavaScript",
+      "React"
+    ],
+    "preferred_skills": [
+      "GraphQL",
+      "Node.js",
+      "Tailwind CSS"
+    ],
+    "description": "Build and ship user-facing features for our healthtech app web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "769277a0-c10e-4387-991b-536bf9b9ae42",
+    "company": "Trueform Technologies Pvt Ltd",
+    "role_title": "Site Reliability Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Kolkata, India",
+    "mode": "Onsite",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "AWS",
+      "CI/CD",
+      "Docker",
+      "Linux"
+    ],
+    "preferred_skills": [
+      "GCP",
+      "Kubernetes"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our IoT monitoring suite infrastructure."
+  },
+  {
+    "id": "93dc4847-2ca6-4dc6-ae0d-9e6f9619ea3c",
+    "company": "Skyfield Ventures Pvt Ltd",
+    "role_title": "Cybersecurity Intern",
+    "domain": "Cybersecurity",
+    "location": "Pune, India",
+    "mode": "Hybrid",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "Problem Solving",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "CI/CD",
+      "Docker",
+      "Git"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our logistics tracker systems."
+  },
+  {
+    "id": "93051a88-1c75-4460-a426-ff7292a99eaf",
+    "company": "Foxglove Systems LLP",
+    "role_title": "Full-Stack Developer Intern",
+    "domain": "Software Development",
+    "location": "Noida, India",
+    "mode": "Onsite",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 8000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "Algorithms",
+      "C++",
+      "Java",
+      "JavaScript",
+      "REST API"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "description": "Work with the engineering team to design, build, and test features for our production CRM tool. You'll pair with senior engineers, write clean code, and ship real features used by customers."
+  },
+  {
+    "id": "1d53889b-d69b-4674-8d09-307e770c4662",
+    "company": "Pixelforge Softworks",
+    "role_title": "Android Developer Intern",
+    "domain": "Mobile Development",
+    "location": "Bengaluru, India",
+    "mode": "Onsite",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "Git",
+      "Java",
+      "Swift"
+    ],
+    "preferred_skills": [
+      "CI/CD",
+      "React Native"
+    ],
+    "description": "Build features for our logistics tracker mobile app used by thousands of users, from UI polish to backend integration."
+  },
+  {
+    "id": "fd1c5941-a696-4680-9558-d5055f8a5ead",
+    "company": "Meridian Systems",
+    "role_title": "Product Design Intern",
+    "domain": "UI/UX Design",
+    "location": "Jaipur, India",
+    "mode": "Hybrid",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Adobe XD",
+      "Figma",
+      "User Research",
+      "Wireframing"
+    ],
+    "preferred_skills": [
+      "HTML"
+    ],
+    "description": "Design intuitive, accessible interfaces for our chat platform product, collaborating closely with engineering and product teams."
+  },
+  {
+    "id": "2cc1e1e6-95ab-44a1-bf13-ae21039314d1",
+    "company": "Ironbridge Softworks Inc",
+    "role_title": "AI Research Intern",
+    "domain": "Data Science",
+    "location": "Kochi, India",
+    "mode": "Hybrid",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Data Analysis",
+      "NumPy",
+      "Pandas",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "Computer Vision",
+      "NLP",
+      "Power BI"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our CRM tool team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "b2d6a82d-3d52-4810-9915-18fe528762b2",
+    "company": "Silverline Labs",
+    "role_title": "Frontend Developer Intern",
+    "domain": "Web Development",
+    "location": "Kochi, India",
+    "mode": "Onsite",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "CSS",
+      "Git",
+      "REST API"
+    ],
+    "preferred_skills": [
+      "Angular",
+      "Node.js",
+      "TypeScript"
+    ],
+    "description": "Build and ship user-facing features for our SaaS dashboard web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "088345ea-433b-4e78-8286-dcf7859ee7c3",
+    "company": "Granite AI Pvt Ltd",
+    "role_title": "Operations Intern",
+    "domain": "Business Analysis",
+    "location": "Jaipur, India",
+    "mode": "Onsite",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "Communication",
+      "Data Analysis",
+      "Excel",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "JIRA",
+      "Tableau"
+    ],
+    "description": "Analyze business processes and data to recommend improvements for our fintech app operations."
+  },
+  {
+    "id": "757b820d-3a92-453f-9385-6937bb4807ed",
+    "company": "Fernwood Digital",
+    "role_title": "UI/UX Design Intern",
+    "domain": "UI/UX Design",
+    "location": "Noida, India",
+    "mode": "Hybrid",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "Adobe XD",
+      "Figma",
+      "User Research",
+      "Wireframing"
+    ],
+    "preferred_skills": [
+      "HTML",
+      "Prototyping"
+    ],
+    "description": "Design intuitive, accessible interfaces for our edtech platform product, collaborating closely with engineering and product teams."
+  },
+  {
+    "id": "ac772a4a-658d-4f9a-ab91-231ef7184022",
+    "company": "Skyfield Ventures",
+    "role_title": "Business Analyst Intern",
+    "domain": "Business Analysis",
+    "location": "Remote",
+    "mode": "Onsite",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 8000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "Communication",
+      "Data Analysis",
+      "Excel",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "Tableau"
+    ],
+    "description": "Analyze business processes and data to recommend improvements for our internal developer platform operations."
+  },
+  {
+    "id": "d24286d8-cbad-4026-8848-496ce6696d4e",
+    "company": "Pixelforge Softworks",
+    "role_title": "Machine Learning Intern",
+    "domain": "Data Science",
+    "location": "Kolkata, India",
+    "mode": "Hybrid",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Data Analysis",
+      "Machine Learning",
+      "NumPy",
+      "Pandas",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Deep Learning",
+      "NLP",
+      "TensorFlow"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our healthtech app team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "7287a7d8-6121-4d56-a82f-86ba3c84eb36",
+    "company": "Cascade Solutions Pvt Ltd",
+    "role_title": "DevOps Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Pune, India",
+    "mode": "Onsite",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "AWS",
+      "Docker",
+      "Git",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Azure"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our internal developer platform infrastructure."
+  },
+  {
+    "id": "851904b5-4ae2-4412-baad-862c4a7cb37f",
+    "company": "Silverline Labs",
+    "role_title": "Application Security Intern",
+    "domain": "Cybersecurity",
+    "location": "Pune, India",
+    "mode": "Remote",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "Linux",
+      "Networking",
+      "Problem Solving",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "CI/CD"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our recommendation engine systems."
+  },
+  {
+    "id": "bbb34754-e253-4b78-aa8f-d6253e8fe6ea",
+    "company": "Northstar AI Inc",
+    "role_title": "Site Reliability Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Remote",
+    "mode": "Hybrid",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "AWS",
+      "Docker",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Azure"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our edtech platform infrastructure."
+  },
+  {
+    "id": "92aaa674-8bdf-4a45-b558-9c63e1969b52",
+    "company": "Cascade Solutions",
+    "role_title": "Data Analyst Intern",
+    "domain": "Data Science",
+    "location": "Noida, India",
+    "mode": "Onsite",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Data Analysis",
+      "Python",
+      "Scikit-learn"
+    ],
+    "preferred_skills": [
+      "Computer Vision",
+      "Deep Learning"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our recommendation engine team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "078779c5-b3d8-47ab-8c72-01eb80dd90de",
+    "company": "Trueform Technologies Pvt Ltd",
+    "role_title": "Backend Developer Intern",
+    "domain": "Software Development",
+    "location": "Jaipur, India",
+    "mode": "Remote",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Algorithms",
+      "Git",
+      "Python",
+      "REST API"
+    ],
+    "preferred_skills": [
+      "CI/CD",
+      "Kubernetes"
+    ],
+    "description": "Work with the engineering team to design, build, and test features for our production SaaS dashboard. You'll pair with senior engineers, write clean code, and ship real features used by customers."
+  },
+  {
+    "id": "8f7d07d8-c5b7-4986-a7b1-2da686e52993",
+    "company": "Silverline Cloud Inc",
+    "role_title": "Site Reliability Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Kochi, India",
+    "mode": "Onsite",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 8000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "Docker",
+      "Git",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Azure",
+      "Kubernetes",
+      "Monitoring"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our internal developer platform infrastructure."
+  },
+  {
+    "id": "4cc5993e-4225-4ff9-91f8-29a5d9c189e8",
+    "company": "Fernwood Analytics Pvt Ltd",
+    "role_title": "Business Analyst Intern",
+    "domain": "Business Analysis",
+    "location": "Pune, India",
+    "mode": "Hybrid",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 8000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Communication",
+      "Data Analysis",
+      "Excel",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "Power BI",
+      "Tableau"
+    ],
+    "description": "Analyze business processes and data to recommend improvements for our IoT monitoring suite operations."
+  },
+  {
+    "id": "35291939-c7cc-4129-9796-c7639d57678f",
+    "company": "Ironbridge Networks LLP",
+    "role_title": "Web Developer Intern",
+    "domain": "Web Development",
+    "location": "Pune, India",
+    "mode": "Remote",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "Bootstrap",
+      "CSS",
+      "Git",
+      "HTML",
+      "React"
+    ],
+    "preferred_skills": [
+      "Angular",
+      "Node.js"
+    ],
+    "description": "Build and ship user-facing features for our logistics tracker web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "2011fa48-05ba-41a3-9913-cf37cba05aa6",
+    "company": "Quantumly Robotics LLP",
+    "role_title": "Software Engineering Intern",
+    "domain": "Software Development",
+    "location": "Kolkata, India",
+    "mode": "Onsite",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Algorithms",
+      "Data Structures",
+      "JavaScript",
+      "REST API"
+    ],
+    "preferred_skills": [
+      "CI/CD",
+      "Django",
+      "Spring Boot"
+    ],
+    "description": "Work with the engineering team to design, build, and test features for our production chat platform. You'll pair with senior engineers, write clean code, and ship real features used by customers."
+  },
+  {
+    "id": "92a2d286-73db-4420-9394-b2dac3d99ea0",
+    "company": "Silverline Cloud Inc",
+    "role_title": "Security Analyst Intern",
+    "domain": "Cybersecurity",
+    "location": "Chennai, India",
+    "mode": "Onsite",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "Linux",
+      "Networking",
+      "Problem Solving",
+      "Python"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "Git"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our payments gateway systems."
+  },
+  {
+    "id": "8f030068-c90c-4cd4-b57d-25e210cfbf60",
+    "company": "Wavecrest Labs",
+    "role_title": "Product Design Intern",
+    "domain": "UI/UX Design",
+    "location": "Chennai, India",
+    "mode": "Hybrid",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 15000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "Figma",
+      "User Research",
+      "Wireframing"
+    ],
+    "preferred_skills": [
+      "Design Systems",
+      "HTML",
+      "Prototyping"
+    ],
+    "description": "Design intuitive, accessible interfaces for our healthtech app product, collaborating closely with engineering and product teams."
+  },
+  {
+    "id": "3e67a9ce-4da1-4dca-9c91-57448a460dc7",
+    "company": "Foxglove Systems LLP",
+    "role_title": "Frontend Developer Intern",
+    "domain": "Web Development",
+    "location": "Gurugram, India",
+    "mode": "Hybrid",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "CSS",
+      "Git",
+      "REST API",
+      "React"
+    ],
+    "preferred_skills": [
+      "Vue"
+    ],
+    "description": "Build and ship user-facing features for our CRM tool web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "c0c2b811-497d-4771-81bd-46fa52a7e286",
+    "company": "Clearwater Solutions",
+    "role_title": "Software Testing Intern",
+    "domain": "QA/Testing",
+    "location": "Pune, India",
+    "mode": "Onsite",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "Git",
+      "Problem Solving",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "Docker"
+    ],
+    "description": "Design and automate test suites for our healthtech app platform, working with developers to catch regressions before release."
+  },
+  {
+    "id": "eb8bb505-20b2-43c5-be64-0f41d0adeb57",
+    "company": "Pixelforge Softworks",
+    "role_title": "Financial Analyst Intern",
+    "domain": "Finance",
+    "location": "Noida, India",
+    "mode": "Remote",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "Communication",
+      "Excel",
+      "Financial Modeling"
+    ],
+    "preferred_skills": [
+      "Data Analysis",
+      "Power BI",
+      "SQL"
+    ],
+    "description": "Support the finance team with budgeting, forecasting, and financial modeling for payments gateway's growth initiatives."
+  },
+  {
+    "id": "c25078b7-e6b3-402f-9b20-c4792b70dfab",
+    "company": "Clearwater Solutions Inc",
+    "role_title": "AI Research Intern",
+    "domain": "Data Science",
+    "location": "Chennai, India",
+    "mode": "Hybrid",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "Machine Learning",
+      "Python",
+      "Scikit-learn",
+      "Statistics"
+    ],
+    "preferred_skills": [
+      "PyTorch"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our CRM tool team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "ceec0569-6b0f-4ebf-85fb-083704faaaf2",
+    "company": "Pixelforge Ventures LLP",
+    "role_title": "Data Science Intern",
+    "domain": "Data Science",
+    "location": "Remote",
+    "mode": "Remote",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "Data Analysis",
+      "Machine Learning",
+      "NumPy",
+      "SQL",
+      "Scikit-learn"
+    ],
+    "preferred_skills": [
+      "Computer Vision",
+      "Deep Learning",
+      "NLP"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our e-commerce marketplace team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "b967e774-d4f6-4f40-8ac5-91abb5aa630e",
+    "company": "Bluepeak Digital Pvt Ltd",
+    "role_title": "Cybersecurity Intern",
+    "domain": "Cybersecurity",
+    "location": "Gurugram, India",
+    "mode": "Remote",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "Linux",
+      "Networking",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "CI/CD"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our recommendation engine systems."
+  },
+  {
+    "id": "b2d4147d-7124-4be2-af88-80811ee5fa61",
+    "company": "Quantumly Software Pvt Ltd",
+    "role_title": "Data Science Intern",
+    "domain": "Data Science",
+    "location": "Hyderabad, India",
+    "mode": "Hybrid",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 8000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Machine Learning",
+      "NumPy",
+      "SQL",
+      "Scikit-learn"
+    ],
+    "preferred_skills": [
+      "Tableau"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our IoT monitoring suite team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "76b925c2-cc02-417d-8f3a-718f3a14ecd0",
+    "company": "Pixelforge Softworks",
+    "role_title": "Business Analyst Intern",
+    "domain": "Business Analysis",
+    "location": "Chennai, India",
+    "mode": "Remote",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Communication",
+      "Data Analysis",
+      "Excel",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "JIRA",
+      "Power BI",
+      "Problem Solving"
+    ],
+    "description": "Analyze business processes and data to recommend improvements for our CRM tool operations."
+  },
+  {
+    "id": "9711457c-2d2a-43c2-91eb-e179771905f3",
+    "company": "Clearwater Solutions Inc",
+    "role_title": "UI/UX Design Intern",
+    "domain": "UI/UX Design",
+    "location": "Gurugram, India",
+    "mode": "Remote",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Figma",
+      "User Research",
+      "Wireframing"
+    ],
+    "preferred_skills": [
+      "Design Systems",
+      "HTML",
+      "Prototyping"
+    ],
+    "description": "Design intuitive, accessible interfaces for our customer analytics platform product, collaborating closely with engineering and product teams."
+  },
+  {
+    "id": "b4f6e377-af3a-4627-96e2-35d930555310",
+    "company": "Nimbus Analytics Pvt Ltd",
+    "role_title": "SEO Intern",
+    "domain": "Digital Marketing",
+    "location": "Gurugram, India",
+    "mode": "Hybrid",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "Content Writing",
+      "Excel",
+      "SEO",
+      "Social Media Marketing"
+    ],
+    "preferred_skills": [
+      "Google Analytics",
+      "Market Research"
+    ],
+    "description": "Plan and execute digital campaigns to grow awareness of our IoT monitoring suite product across channels."
+  },
+  {
+    "id": "01f47050-ca07-4992-b0ae-08356e6deafb",
+    "company": "Northstar AI Inc",
+    "role_title": "Data Analyst Intern",
+    "domain": "Data Science",
+    "location": "Jaipur, India",
+    "mode": "Remote",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Data Analysis",
+      "Machine Learning",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "TensorFlow"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our SaaS dashboard team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "406eab52-3408-4457-87cf-54980ad8981b",
+    "company": "Cascade Ventures LLP",
+    "role_title": "AI Research Intern",
+    "domain": "Data Science",
+    "location": "Ahmedabad, India",
+    "mode": "Hybrid",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "Data Analysis",
+      "Machine Learning",
+      "Python",
+      "Scikit-learn",
+      "Statistics"
+    ],
+    "preferred_skills": [
+      "NLP",
+      "TensorFlow"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our SaaS dashboard team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "927f40ba-ae73-4e6d-be2d-34fd3068bd3f",
+    "company": "Trueform Dynamics Inc",
+    "role_title": "Security Analyst Intern",
+    "domain": "Cybersecurity",
+    "location": "Noida, India",
+    "mode": "Hybrid",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "Linux",
+      "Networking",
+      "Problem Solving",
+      "Python"
+    ],
+    "preferred_skills": [
+      "AWS"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our SaaS dashboard systems."
+  },
+  {
+    "id": "8e06d19b-fc28-49dc-a058-ee128fbbab05",
+    "company": "Northstar Networks Pvt Ltd",
+    "role_title": "UI Engineering Intern",
+    "domain": "Web Development",
+    "location": "Kochi, India",
+    "mode": "Hybrid",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "Bootstrap",
+      "Git",
+      "REST API"
+    ],
+    "preferred_skills": [
+      "Angular",
+      "TypeScript"
+    ],
+    "description": "Build and ship user-facing features for our payments gateway web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "4d0fd5e6-e6db-4218-ac21-4aeea170e4de",
+    "company": "Lumenary Dynamics Inc",
+    "role_title": "Application Security Intern",
+    "domain": "Cybersecurity",
+    "location": "Noida, India",
+    "mode": "Hybrid",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "Linux",
+      "Problem Solving",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "CI/CD"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our chat platform systems."
+  },
+  {
+    "id": "7a018bc2-4274-428f-9534-5ea6801b63f1",
+    "company": "Fernwood Digital",
+    "role_title": "Full-Stack Developer Intern",
+    "domain": "Software Development",
+    "location": "Gurugram, India",
+    "mode": "Remote",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 15000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Algorithms",
+      "Data Structures",
+      "Python",
+      "REST API"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "Docker",
+      "Spring Boot"
+    ],
+    "description": "Work with the engineering team to design, build, and test features for our production fintech app. You'll pair with senior engineers, write clean code, and ship real features used by customers."
+  },
+  {
+    "id": "944303b8-68d9-4d41-8ffc-221fa8d52fcf",
+    "company": "Amberline Technologies LLP",
+    "role_title": "AI Research Intern",
+    "domain": "Data Science",
+    "location": "Gurugram, India",
+    "mode": "Remote",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "Machine Learning",
+      "Python",
+      "SQL",
+      "Scikit-learn",
+      "Statistics"
+    ],
+    "preferred_skills": [
+      "Computer Vision",
+      "NLP",
+      "TensorFlow"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our edtech platform team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "76c111fd-523b-432a-9f7f-0d2caf667a07",
+    "company": "Cascade Solutions Pvt Ltd",
+    "role_title": "Security Analyst Intern",
+    "domain": "Cybersecurity",
+    "location": "Gurugram, India",
+    "mode": "Onsite",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Linux",
+      "Networking",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Git"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our logistics tracker systems."
+  },
+  {
+    "id": "1b894972-a875-415e-9a0b-dc7eadbf9b6e",
+    "company": "Brightloop Robotics",
+    "role_title": "Java Developer Intern",
+    "domain": "Software Development",
+    "location": "Ahmedabad, India",
+    "mode": "Onsite",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "Algorithms",
+      "C++",
+      "Java",
+      "JavaScript",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Django",
+      "FastAPI",
+      "Kubernetes"
+    ],
+    "description": "Work with the engineering team to design, build, and test features for our production IoT monitoring suite. You'll pair with senior engineers, write clean code, and ship real features used by customers."
+  },
+  {
+    "id": "6955db9a-3208-4104-ade5-1ac1660981ed",
+    "company": "Brightloop Robotics",
+    "role_title": "React Developer Intern",
+    "domain": "Web Development",
+    "location": "Chennai, India",
+    "mode": "Onsite",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 8000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "CSS",
+      "JavaScript",
+      "REST API"
+    ],
+    "preferred_skills": [
+      "Angular",
+      "Node.js"
+    ],
+    "description": "Build and ship user-facing features for our customer analytics platform web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "1b33b260-d357-49b4-a6e0-16c274f77538",
+    "company": "Trueform Technologies Pvt Ltd",
+    "role_title": "Platform Engineering Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Noida, India",
+    "mode": "Remote",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "CI/CD",
+      "Docker",
+      "Git",
+      "Linux",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Azure",
+      "Kubernetes",
+      "Monitoring"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our recommendation engine infrastructure."
+  },
+  {
+    "id": "16038fb6-0638-4596-8e49-638b16e2f474",
+    "company": "Nimbus Analytics Pvt Ltd",
+    "role_title": "Full-Stack Developer Intern",
+    "domain": "Software Development",
+    "location": "Noida, India",
+    "mode": "Hybrid",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "C++",
+      "Git",
+      "Python"
+    ],
+    "preferred_skills": [
+      "CI/CD"
+    ],
+    "description": "Work with the engineering team to design, build, and test features for our production CRM tool. You'll pair with senior engineers, write clean code, and ship real features used by customers."
+  },
+  {
+    "id": "621f45e1-61b0-4a88-8939-31e9d4f03fe2",
+    "company": "Cascade Solutions Pvt Ltd",
+    "role_title": "Mobile App Developer Intern",
+    "domain": "Mobile Development",
+    "location": "Hyderabad, India",
+    "mode": "Onsite",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 15000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "Git",
+      "Java",
+      "Kotlin",
+      "REST API",
+      "Swift"
+    ],
+    "preferred_skills": [
+      "SQLite"
+    ],
+    "description": "Build features for our edtech platform mobile app used by thousands of users, from UI polish to backend integration."
+  },
+  {
+    "id": "045c5583-f74a-40c4-a0ac-7c5ffea0b164",
+    "company": "Ironbridge Softworks Inc",
+    "role_title": "Business Analyst Intern",
+    "domain": "Business Analysis",
+    "location": "Jaipur, India",
+    "mode": "Remote",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 15000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Communication",
+      "Data Analysis",
+      "Excel",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "Tableau"
+    ],
+    "description": "Analyze business processes and data to recommend improvements for our fintech app operations."
+  },
+  {
+    "id": "f540c761-a1ac-487b-a5b3-0ce024910c30",
+    "company": "Quantumly Software Pvt Ltd",
+    "role_title": "Machine Learning Intern",
+    "domain": "Data Science",
+    "location": "Pune, India",
+    "mode": "Hybrid",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Data Analysis",
+      "NumPy",
+      "SQL",
+      "Scikit-learn",
+      "Statistics"
+    ],
+    "preferred_skills": [
+      "Computer Vision",
+      "Power BI",
+      "Tableau"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our CRM tool team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "0c6c38ba-1110-4422-b218-aad1b15e4677",
+    "company": "Fernwood Analytics Pvt Ltd",
+    "role_title": "Site Reliability Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Kolkata, India",
+    "mode": "Remote",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "CI/CD",
+      "Docker",
+      "Git",
+      "Linux"
+    ],
+    "preferred_skills": [
+      "Azure",
+      "Jenkins",
+      "Kubernetes"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our logistics tracker infrastructure."
+  },
+  {
+    "id": "0e14fd29-4218-4146-b780-84e75fbee251",
+    "company": "Pixelforge Softworks Pvt Ltd",
+    "role_title": "Software Engineering Intern",
+    "domain": "Software Development",
+    "location": "Mumbai, India",
+    "mode": "Remote",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "Data Structures",
+      "Java",
+      "JavaScript",
+      "Python",
+      "REST API"
+    ],
+    "preferred_skills": [
+      "Django",
+      "FastAPI"
+    ],
+    "description": "Work with the engineering team to design, build, and test features for our production edtech platform. You'll pair with senior engineers, write clean code, and ship real features used by customers."
+  },
+  {
+    "id": "89ab1956-c5cd-4ff1-8bd1-2ed50f8d9fc5",
+    "company": "Highfield Innovations LLP",
+    "role_title": "Frontend Developer Intern",
+    "domain": "Web Development",
+    "location": "Hyderabad, India",
+    "mode": "Onsite",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Bootstrap",
+      "REST API",
+      "React"
+    ],
+    "preferred_skills": [
+      "Angular",
+      "Tailwind CSS",
+      "Vue"
+    ],
+    "description": "Build and ship user-facing features for our IoT monitoring suite web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "1fca91ff-62fe-440f-a80f-4be61137def3",
+    "company": "Wavecrest Solutions Pvt Ltd",
+    "role_title": "Test Automation Intern",
+    "domain": "QA/Testing",
+    "location": "Noida, India",
+    "mode": "Onsite",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 8000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Git",
+      "Java",
+      "Problem Solving",
+      "Python",
+      "Selenium"
+    ],
+    "preferred_skills": [
+      "Docker",
+      "JIRA",
+      "REST API"
+    ],
+    "description": "Design and automate test suites for our SaaS dashboard platform, working with developers to catch regressions before release."
+  },
+  {
+    "id": "acb77d76-cfa2-4d5b-a3ef-c17e494b3f2e",
+    "company": "Brightloop Robotics",
+    "role_title": "Content Marketing Intern",
+    "domain": "Digital Marketing",
+    "location": "Gurugram, India",
+    "mode": "Remote",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "Content Writing",
+      "Excel",
+      "SEO",
+      "Social Media Marketing"
+    ],
+    "preferred_skills": [
+      "Communication",
+      "Google Analytics",
+      "Market Research"
+    ],
+    "description": "Plan and execute digital campaigns to grow awareness of our logistics tracker product across channels."
+  },
+  {
+    "id": "de004135-151b-49ea-ab17-45af9eb5d51f",
+    "company": "Amberline Technologies LLP",
+    "role_title": "UI/UX Design Intern",
+    "domain": "UI/UX Design",
+    "location": "Jaipur, India",
+    "mode": "Onsite",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Adobe XD",
+      "Figma",
+      "User Research",
+      "Wireframing"
+    ],
+    "preferred_skills": [
+      "CSS",
+      "HTML"
+    ],
+    "description": "Design intuitive, accessible interfaces for our internal developer platform product, collaborating closely with engineering and product teams."
+  },
+  {
+    "id": "b5aa8fde-2434-4e56-b202-7cccc2b00245",
+    "company": "Highfield Innovations LLP",
+    "role_title": "QA Engineering Intern",
+    "domain": "QA/Testing",
+    "location": "Hyderabad, India",
+    "mode": "Hybrid",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 8000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "Git",
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "JIRA"
+    ],
+    "description": "Design and automate test suites for our healthtech app platform, working with developers to catch regressions before release."
+  },
+  {
+    "id": "be306eb4-51a6-42f6-91db-626abfccd38c",
+    "company": "Cascade Ventures LLP",
+    "role_title": "Product Management Intern",
+    "domain": "Product Management",
+    "location": "Kolkata, India",
+    "mode": "Remote",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "Communication",
+      "Excel",
+      "Market Research",
+      "Problem Solving"
+    ],
+    "preferred_skills": [
+      "JIRA"
+    ],
+    "description": "Support the product team in gathering requirements, analyzing user feedback, and prioritizing the roadmap for recommendation engine."
+  },
+  {
+    "id": "16546bbf-37d1-45c4-8aa4-d665c17dbf45",
+    "company": "Northstar AI Inc",
+    "role_title": "Web Developer Intern",
+    "domain": "Web Development",
+    "location": "Jaipur, India",
+    "mode": "Hybrid",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Bootstrap",
+      "Git",
+      "REST API",
+      "React"
+    ],
+    "preferred_skills": [
+      "Tailwind CSS"
+    ],
+    "description": "Build and ship user-facing features for our edtech platform web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "e5338fc7-e097-41fe-b9c9-2525cfa2c240",
+    "company": "Silverline Labs",
+    "role_title": "Finance Intern",
+    "domain": "Finance",
+    "location": "Bengaluru, India",
+    "mode": "Hybrid",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "Communication",
+      "Excel",
+      "Financial Modeling"
+    ],
+    "preferred_skills": [
+      "SQL"
+    ],
+    "description": "Support the finance team with budgeting, forecasting, and financial modeling for healthtech app's growth initiatives."
+  },
+  {
+    "id": "74ddcdfd-ce8f-48d3-89cf-54f7deb4fd01",
+    "company": "Foxglove Systems LLP",
+    "role_title": "Machine Learning Intern",
+    "domain": "Data Science",
+    "location": "Hyderabad, India",
+    "mode": "Remote",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "NumPy",
+      "Pandas",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "NLP"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our SaaS dashboard team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "ffbc8499-78cb-4705-9c6e-c06adbf16bf2",
+    "company": "Wavecrest Solutions Pvt Ltd",
+    "role_title": "Web Developer Intern",
+    "domain": "Web Development",
+    "location": "Gurugram, India",
+    "mode": "Remote",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "CSS",
+      "JavaScript",
+      "React"
+    ],
+    "preferred_skills": [
+      "Angular",
+      "GraphQL",
+      "TypeScript"
+    ],
+    "description": "Build and ship user-facing features for our customer analytics platform web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "aba94d11-d0f7-4d93-af25-f6c9ad12b9ee",
+    "company": "Clearwater Solutions Inc",
+    "role_title": "React Developer Intern",
+    "domain": "Web Development",
+    "location": "Pune, India",
+    "mode": "Hybrid",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "CSS",
+      "Git",
+      "HTML",
+      "JavaScript"
+    ],
+    "preferred_skills": [
+      "GraphQL"
+    ],
+    "description": "Build and ship user-facing features for our e-commerce marketplace web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "d3bee172-12b0-4a13-85d6-82e2c4cf2889",
+    "company": "Cascade Ventures LLP",
+    "role_title": "Security Analyst Intern",
+    "domain": "Cybersecurity",
+    "location": "Hyderabad, India",
+    "mode": "Onsite",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 8000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "Linux",
+      "Networking",
+      "Problem Solving",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "Git"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our payments gateway systems."
+  },
+  {
+    "id": "b4ff376b-73e8-4f10-98ca-946eceaf50d4",
+    "company": "Fernwood Technologies",
+    "role_title": "Software Testing Intern",
+    "domain": "QA/Testing",
+    "location": "Pune, India",
+    "mode": "Hybrid",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Java",
+      "Problem Solving",
+      "Python",
+      "SQL",
+      "Selenium"
+    ],
+    "preferred_skills": [
+      "Docker"
+    ],
+    "description": "Design and automate test suites for our SaaS dashboard platform, working with developers to catch regressions before release."
+  },
+  {
+    "id": "ad876710-1f26-411f-b0ef-4bce767ac008",
+    "company": "Quantumly Robotics LLP",
+    "role_title": "Software Testing Intern",
+    "domain": "QA/Testing",
+    "location": "Gurugram, India",
+    "mode": "Remote",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 15000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "Git",
+      "Problem Solving",
+      "Python",
+      "SQL",
+      "Selenium"
+    ],
+    "preferred_skills": [
+      "Docker",
+      "REST API"
+    ],
+    "description": "Design and automate test suites for our customer analytics platform platform, working with developers to catch regressions before release."
+  },
+  {
+    "id": "15231450-8698-4893-b901-a9727fa4d8b5",
+    "company": "Skyfield Ventures Pvt Ltd",
+    "role_title": "iOS Developer Intern",
+    "domain": "Mobile Development",
+    "location": "Kolkata, India",
+    "mode": "Hybrid",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Git",
+      "Java",
+      "Kotlin",
+      "REST API",
+      "Swift"
+    ],
+    "preferred_skills": [
+      "React Native"
+    ],
+    "description": "Build features for our recommendation engine mobile app used by thousands of users, from UI polish to backend integration."
+  },
+  {
+    "id": "f2699d4f-df5d-43c2-864b-9953a3159d77",
+    "company": "Quantumly Networks Pvt Ltd",
+    "role_title": "Platform Engineering Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Kolkata, India",
+    "mode": "Onsite",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 15000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "CI/CD",
+      "Git",
+      "Linux",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Azure",
+      "Monitoring"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our fintech app infrastructure."
+  },
+  {
+    "id": "9f4feed5-7d7b-4c88-a271-685bac6b9de3",
+    "company": "Foxglove Systems LLP",
+    "role_title": "SEO Intern",
+    "domain": "Digital Marketing",
+    "location": "Pune, India",
+    "mode": "Onsite",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Content Writing",
+      "Excel",
+      "SEO",
+      "Social Media Marketing"
+    ],
+    "preferred_skills": [
+      "Google Analytics",
+      "Market Research"
+    ],
+    "description": "Plan and execute digital campaigns to grow awareness of our edtech platform product across channels."
+  },
+  {
+    "id": "8af06002-d457-409f-9979-4b58f3184def",
+    "company": "Nimbus Networks LLP",
+    "role_title": "Site Reliability Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Hyderabad, India",
+    "mode": "Onsite",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "AWS",
+      "CI/CD",
+      "Docker",
+      "Git",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Azure",
+      "Kubernetes"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our payments gateway infrastructure."
+  },
+  {
+    "id": "b7b63c4f-9f64-4820-8c6d-c2bd835d5123",
+    "company": "Lumenary Dynamics Inc",
+    "role_title": "Content Marketing Intern",
+    "domain": "Digital Marketing",
+    "location": "Mumbai, India",
+    "mode": "Hybrid",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "Content Writing",
+      "Excel",
+      "SEO",
+      "Social Media Marketing"
+    ],
+    "preferred_skills": [
+      "Market Research"
+    ],
+    "description": "Plan and execute digital campaigns to grow awareness of our SaaS dashboard product across channels."
+  },
+  {
+    "id": "75b1a6c2-392c-4f2d-9052-718c8b652cc9",
+    "company": "Foxglove Systems LLP",
+    "role_title": "UI/UX Design Intern",
+    "domain": "UI/UX Design",
+    "location": "Hyderabad, India",
+    "mode": "Remote",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "Adobe XD",
+      "Figma",
+      "User Research",
+      "Wireframing"
+    ],
+    "preferred_skills": [
+      "CSS",
+      "Prototyping"
+    ],
+    "description": "Design intuitive, accessible interfaces for our logistics tracker product, collaborating closely with engineering and product teams."
+  },
+  {
+    "id": "d253b4c2-c9e0-419c-a060-4be3af90842b",
+    "company": "Nimbus Analytics Pvt Ltd",
+    "role_title": "Business Analyst Intern",
+    "domain": "Business Analysis",
+    "location": "Gurugram, India",
+    "mode": "Onsite",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "Communication",
+      "Data Analysis",
+      "Excel"
+    ],
+    "preferred_skills": [
+      "JIRA",
+      "Problem Solving"
+    ],
+    "description": "Analyze business processes and data to recommend improvements for our fintech app operations."
+  },
+  {
+    "id": "e25083b9-02ca-4ab4-a9e3-be22182529d2",
+    "company": "Quantumly Robotics LLP",
+    "role_title": "Site Reliability Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Kolkata, India",
+    "mode": "Remote",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "CI/CD",
+      "Docker",
+      "Linux",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Azure",
+      "Terraform"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our recommendation engine infrastructure."
+  },
+  {
+    "id": "adf1cbf8-a078-443f-a64a-d2440b9b1bba",
+    "company": "Skyfield Ventures Pvt Ltd",
+    "role_title": "React Developer Intern",
+    "domain": "Web Development",
+    "location": "Gurugram, India",
+    "mode": "Hybrid",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "Bootstrap",
+      "CSS",
+      "REST API"
+    ],
+    "preferred_skills": [
+      "Tailwind CSS",
+      "Vue"
+    ],
+    "description": "Build and ship user-facing features for our internal developer platform web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "f1fd7038-120c-4625-9262-61a3d4f7028e",
+    "company": "Quantumly Software Pvt Ltd",
+    "role_title": "Cloud Engineering Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Kolkata, India",
+    "mode": "Remote",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "AWS",
+      "CI/CD",
+      "Docker",
+      "Linux",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Azure",
+      "Monitoring"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our e-commerce marketplace infrastructure."
+  },
+  {
+    "id": "8629480b-27bc-43ce-aedb-3e96dd34d467",
+    "company": "Ironbridge Networks LLP",
+    "role_title": "UI Engineering Intern",
+    "domain": "Web Development",
+    "location": "Hyderabad, India",
+    "mode": "Remote",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "CSS",
+      "Git",
+      "JavaScript",
+      "REST API"
+    ],
+    "preferred_skills": [
+      "Angular",
+      "Tailwind CSS",
+      "Vue"
+    ],
+    "description": "Build and ship user-facing features for our CRM tool web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "9fbfc67f-fb3a-4325-bb6f-cd534aed3167",
+    "company": "Meridian Analytics Inc",
+    "role_title": "Operations Intern",
+    "domain": "Business Analysis",
+    "location": "Bengaluru, India",
+    "mode": "Remote",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "Communication",
+      "Excel",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "JIRA",
+      "Power BI"
+    ],
+    "description": "Analyze business processes and data to recommend improvements for our fintech app operations."
+  },
+  {
+    "id": "ac8bd34e-c602-49d9-a28f-59177e749712",
+    "company": "Quantumly Software Pvt Ltd",
+    "role_title": "AI Research Intern",
+    "domain": "Data Science",
+    "location": "Jaipur, India",
+    "mode": "Onsite",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "Data Analysis",
+      "Machine Learning",
+      "Pandas",
+      "SQL",
+      "Scikit-learn"
+    ],
+    "preferred_skills": [
+      "Computer Vision",
+      "Power BI",
+      "Tableau"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our logistics tracker team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "9b7dbc7f-23b7-4568-b7c3-07a48b828a84",
+    "company": "Quantumly Systems Pvt Ltd",
+    "role_title": "DevOps Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Hyderabad, India",
+    "mode": "Remote",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "AWS",
+      "CI/CD",
+      "Linux"
+    ],
+    "preferred_skills": [
+      "GCP",
+      "Monitoring"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our customer analytics platform infrastructure."
+  },
+  {
+    "id": "5effdd92-0c38-49b2-aeab-ad81003dca06",
+    "company": "Wavecrest Solutions LLP",
+    "role_title": "React Developer Intern",
+    "domain": "Web Development",
+    "location": "Chennai, India",
+    "mode": "Hybrid",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "CSS",
+      "HTML",
+      "REST API"
+    ],
+    "preferred_skills": [
+      "Angular",
+      "GraphQL"
+    ],
+    "description": "Build and ship user-facing features for our IoT monitoring suite web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "94256548-fda7-4e9b-8c22-61b9e897e962",
+    "company": "Lumenary Dynamics LLP",
+    "role_title": "Full-Stack Developer Intern",
+    "domain": "Software Development",
+    "location": "Pune, India",
+    "mode": "Onsite",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "Algorithms",
+      "C++",
+      "Java"
+    ],
+    "preferred_skills": [
+      "Django"
+    ],
+    "description": "Work with the engineering team to design, build, and test features for our production CRM tool. You'll pair with senior engineers, write clean code, and ship real features used by customers."
+  },
+  {
+    "id": "0050e80c-bd0a-43dd-98a2-bc7c98373c1d",
+    "company": "Bluepeak Digital Pvt Ltd",
+    "role_title": "Platform Engineering Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Pune, India",
+    "mode": "Remote",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "AWS",
+      "CI/CD",
+      "Docker",
+      "Git",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Terraform"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our e-commerce marketplace infrastructure."
+  },
+  {
+    "id": "a49b4f8a-eda9-4f51-8013-45a8cfb65270",
+    "company": "Basecrest Ventures Inc",
+    "role_title": "Data Analyst Intern",
+    "domain": "Data Science",
+    "location": "Mumbai, India",
+    "mode": "Onsite",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "Machine Learning",
+      "Pandas",
+      "SQL",
+      "Scikit-learn",
+      "Statistics"
+    ],
+    "preferred_skills": [
+      "Deep Learning"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our IoT monitoring suite team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "e590e701-22eb-402c-a47c-ae451f9d471e",
+    "company": "Trueform Studio",
+    "role_title": "UI Engineering Intern",
+    "domain": "Web Development",
+    "location": "Remote",
+    "mode": "Remote",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "Bootstrap",
+      "JavaScript",
+      "REST API",
+      "React"
+    ],
+    "preferred_skills": [
+      "GraphQL"
+    ],
+    "description": "Build and ship user-facing features for our healthtech app web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "ee860d28-cec3-4d65-b8b0-a14132515c72",
+    "company": "Quantumly Systems Pvt Ltd",
+    "role_title": "Machine Learning Intern",
+    "domain": "Data Science",
+    "location": "Remote",
+    "mode": "Onsite",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "Data Analysis",
+      "SQL",
+      "Scikit-learn",
+      "Statistics"
+    ],
+    "preferred_skills": [
+      "TensorFlow"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our edtech platform team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "283535e1-027e-40b5-bfb9-100781077896",
+    "company": "Skyfield Ventures",
+    "role_title": "Site Reliability Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Gurugram, India",
+    "mode": "Hybrid",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "AWS",
+      "CI/CD",
+      "Git",
+      "Linux",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Monitoring"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our chat platform infrastructure."
+  },
+  {
+    "id": "fe2a9bd3-fb7a-453e-a1b3-ca9cd785194b",
+    "company": "Northstar AI Inc",
+    "role_title": "Platform Engineering Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Ahmedabad, India",
+    "mode": "Hybrid",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "AWS",
+      "CI/CD",
+      "Docker",
+      "Git"
+    ],
+    "preferred_skills": [
+      "GCP",
+      "Monitoring"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our logistics tracker infrastructure."
+  },
+  {
+    "id": "399bb247-7ddf-48a0-b750-f42b1c6ba8b5",
+    "company": "Trueform Studio",
+    "role_title": "Site Reliability Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Bengaluru, India",
+    "mode": "Onsite",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "AWS",
+      "CI/CD",
+      "Docker",
+      "Git",
+      "Linux"
+    ],
+    "preferred_skills": [
+      "Azure",
+      "GCP",
+      "Kubernetes"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our IoT monitoring suite infrastructure."
+  },
+  {
+    "id": "11a9f87b-8942-49e0-afeb-5155eef6c0c0",
+    "company": "Clearwater Solutions",
+    "role_title": "Mobile App Developer Intern",
+    "domain": "Mobile Development",
+    "location": "Ahmedabad, India",
+    "mode": "Onsite",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 15000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Git",
+      "Java",
+      "Kotlin",
+      "REST API",
+      "Swift"
+    ],
+    "preferred_skills": [
+      "CI/CD",
+      "Firebase"
+    ],
+    "description": "Build features for our recommendation engine mobile app used by thousands of users, from UI polish to backend integration."
+  },
+  {
+    "id": "d1ec2139-3826-4621-8bb9-57803b033c3c",
+    "company": "Lumenary Dynamics LLP",
+    "role_title": "Associate Product Intern",
+    "domain": "Product Management",
+    "location": "Ahmedabad, India",
+    "mode": "Onsite",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "Communication",
+      "Market Research",
+      "Problem Solving"
+    ],
+    "preferred_skills": [
+      "Data Analysis",
+      "JIRA",
+      "SQL"
+    ],
+    "description": "Support the product team in gathering requirements, analyzing user feedback, and prioritizing the roadmap for fintech app."
+  },
+  {
+    "id": "bc06f3db-64da-4d90-a1e2-52db497c7c72",
+    "company": "Basecrest Software LLP",
+    "role_title": "Full-Stack Developer Intern",
+    "domain": "Software Development",
+    "location": "Gurugram, India",
+    "mode": "Hybrid",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "Data Structures",
+      "Java",
+      "REST API"
+    ],
+    "preferred_skills": [
+      "CI/CD",
+      "Spring Boot"
+    ],
+    "description": "Work with the engineering team to design, build, and test features for our production fintech app. You'll pair with senior engineers, write clean code, and ship real features used by customers."
+  },
+  {
+    "id": "b0822ac0-4cc0-49c7-ac1f-3fde72c6a6d8",
+    "company": "Lumenary Dynamics LLP",
+    "role_title": "Associate Product Intern",
+    "domain": "Product Management",
+    "location": "Kolkata, India",
+    "mode": "Onsite",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "Communication",
+      "Market Research",
+      "Problem Solving"
+    ],
+    "preferred_skills": [
+      "Agile"
+    ],
+    "description": "Support the product team in gathering requirements, analyzing user feedback, and prioritizing the roadmap for edtech platform."
+  },
+  {
+    "id": "213140a9-fe56-4d49-9d5c-10436d92831f",
+    "company": "Nimbus Networks LLP",
+    "role_title": "Data Science Intern",
+    "domain": "Data Science",
+    "location": "Kolkata, India",
+    "mode": "Hybrid",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "Data Analysis",
+      "SQL",
+      "Statistics"
+    ],
+    "preferred_skills": [
+      "Deep Learning",
+      "TensorFlow"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our edtech platform team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "eb8238b5-b9e6-4c7d-8704-0c163e5b88db",
+    "company": "Cobalt Cloud",
+    "role_title": "Android Developer Intern",
+    "domain": "Mobile Development",
+    "location": "Bengaluru, India",
+    "mode": "Hybrid",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 15000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "Java",
+      "Kotlin",
+      "REST API"
+    ],
+    "preferred_skills": [
+      "CI/CD",
+      "React Native"
+    ],
+    "description": "Build features for our e-commerce marketplace mobile app used by thousands of users, from UI polish to backend integration."
+  },
+  {
+    "id": "27f3c626-ba65-45c7-81d2-a8acb26fead9",
+    "company": "Meridian Analytics Inc",
+    "role_title": "UI/UX Design Intern",
+    "domain": "UI/UX Design",
+    "location": "Pune, India",
+    "mode": "Onsite",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "Adobe XD",
+      "User Research",
+      "Wireframing"
+    ],
+    "preferred_skills": [
+      "Design Systems",
+      "HTML",
+      "Prototyping"
+    ],
+    "description": "Design intuitive, accessible interfaces for our fintech app product, collaborating closely with engineering and product teams."
+  },
+  {
+    "id": "5ac58d04-5b8e-416d-ae7b-f2e2d1649d7b",
+    "company": "Pixelforge Softworks Pvt Ltd",
+    "role_title": "Cloud Engineering Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Pune, India",
+    "mode": "Remote",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "AWS",
+      "CI/CD",
+      "Docker",
+      "Git",
+      "Linux"
+    ],
+    "preferred_skills": [
+      "Azure",
+      "Jenkins"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our SaaS dashboard infrastructure."
+  },
+  {
+    "id": "dfc8a316-b753-483d-872a-8de928027ebd",
+    "company": "Basecrest Software LLP",
+    "role_title": "Application Security Intern",
+    "domain": "Cybersecurity",
+    "location": "Pune, India",
+    "mode": "Hybrid",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "Networking",
+      "Problem Solving",
+      "Python"
+    ],
+    "preferred_skills": [
+      "CI/CD",
+      "Git"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our IoT monitoring suite systems."
+  },
+  {
+    "id": "5c256146-c14a-49e9-8580-8968e476aabc",
+    "company": "Trueform Technologies Pvt Ltd",
+    "role_title": "Mobile App Developer Intern",
+    "domain": "Mobile Development",
+    "location": "Mumbai, India",
+    "mode": "Hybrid",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "Git",
+      "Java",
+      "Kotlin",
+      "REST API",
+      "Swift"
+    ],
+    "preferred_skills": [
+      "CI/CD",
+      "React Native"
+    ],
+    "description": "Build features for our edtech platform mobile app used by thousands of users, from UI polish to backend integration."
+  },
+  {
+    "id": "7e882558-6d17-45d0-b64f-9d541dbf7850",
+    "company": "Northstar AI Inc",
+    "role_title": "Test Automation Intern",
+    "domain": "QA/Testing",
+    "location": "Bengaluru, India",
+    "mode": "Onsite",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 15000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "Java",
+      "Problem Solving",
+      "Python",
+      "Selenium"
+    ],
+    "preferred_skills": [
+      "CI/CD",
+      "Docker",
+      "REST API"
+    ],
+    "description": "Design and automate test suites for our e-commerce marketplace platform, working with developers to catch regressions before release."
+  },
+  {
+    "id": "b28e580f-5c85-41f6-84d5-21cde06f35d0",
+    "company": "Brightloop Robotics",
+    "role_title": "Data Science Intern",
+    "domain": "Data Science",
+    "location": "Mumbai, India",
+    "mode": "Remote",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "Pandas",
+      "SQL",
+      "Statistics"
+    ],
+    "preferred_skills": [
+      "TensorFlow"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our IoT monitoring suite team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "2a01b5a2-081f-4035-ba29-84cc39c4e0c0",
+    "company": "Northstar AI Inc",
+    "role_title": "QA Engineering Intern",
+    "domain": "QA/Testing",
+    "location": "Kochi, India",
+    "mode": "Hybrid",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "Git",
+      "Java",
+      "Python",
+      "SQL",
+      "Selenium"
+    ],
+    "preferred_skills": [
+      "Docker",
+      "JIRA",
+      "REST API"
+    ],
+    "description": "Design and automate test suites for our IoT monitoring suite platform, working with developers to catch regressions before release."
+  },
+  {
+    "id": "76721dd7-b783-4b49-9d18-9b0bdd5dda7d",
+    "company": "Quantumly Systems Pvt Ltd",
+    "role_title": "Frontend Developer Intern",
+    "domain": "Web Development",
+    "location": "Remote",
+    "mode": "Hybrid",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "Bootstrap",
+      "Git",
+      "HTML",
+      "React"
+    ],
+    "preferred_skills": [
+      "GraphQL",
+      "Tailwind CSS",
+      "Vue"
+    ],
+    "description": "Build and ship user-facing features for our customer analytics platform web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "9513ebf7-90c4-4e6d-8a0c-789ba8f0a775",
+    "company": "Basecrest Ventures Inc",
+    "role_title": "UI Engineering Intern",
+    "domain": "Web Development",
+    "location": "Bengaluru, India",
+    "mode": "Onsite",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "Git",
+      "HTML",
+      "JavaScript",
+      "REST API",
+      "React"
+    ],
+    "preferred_skills": [
+      "GraphQL"
+    ],
+    "description": "Build and ship user-facing features for our chat platform web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "ce65083f-14ca-4cf3-b612-5e827cc19bca",
+    "company": "Trueform Technologies Pvt Ltd",
+    "role_title": "Machine Learning Intern",
+    "domain": "Data Science",
+    "location": "Hyderabad, India",
+    "mode": "Remote",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "NumPy",
+      "Python",
+      "Statistics"
+    ],
+    "preferred_skills": [
+      "PyTorch"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our CRM tool team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "e509d71c-07c3-4105-98bd-a16931929867",
+    "company": "Granite AI Pvt Ltd",
+    "role_title": "Cybersecurity Intern",
+    "domain": "Cybersecurity",
+    "location": "Jaipur, India",
+    "mode": "Hybrid",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "Linux",
+      "Problem Solving",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "CI/CD",
+      "Git"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our chat platform systems."
+  },
+  {
+    "id": "e6a17e86-9bc6-43e3-bdde-47c91bc5695c",
+    "company": "Skyfield Ventures",
+    "role_title": "Cloud Engineering Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Chennai, India",
+    "mode": "Remote",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "AWS",
+      "CI/CD",
+      "Docker",
+      "Git",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Terraform"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our recommendation engine infrastructure."
+  },
+  {
+    "id": "961389f7-e251-460b-ab91-cbb9d90202fd",
+    "company": "Lumenary Dynamics Inc",
+    "role_title": "Backend Developer Intern",
+    "domain": "Software Development",
+    "location": "Chennai, India",
+    "mode": "Hybrid",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 8000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Git",
+      "Java",
+      "Python",
+      "REST API",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "FastAPI"
+    ],
+    "description": "Work with the engineering team to design, build, and test features for our production healthtech app. You'll pair with senior engineers, write clean code, and ship real features used by customers."
+  },
+  {
+    "id": "c9154927-bb0a-43d8-8169-6edda753926f",
+    "company": "Foxglove Systems LLP",
+    "role_title": "Data Science Intern",
+    "domain": "Data Science",
+    "location": "Kochi, India",
+    "mode": "Remote",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "Machine Learning",
+      "NumPy",
+      "Pandas",
+      "Python",
+      "Scikit-learn"
+    ],
+    "preferred_skills": [
+      "Tableau"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our e-commerce marketplace team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "e94b6f65-5f7e-4e9b-96bf-ba0bbc942027",
+    "company": "Quantumly Systems Pvt Ltd",
+    "role_title": "SEO Intern",
+    "domain": "Digital Marketing",
+    "location": "Ahmedabad, India",
+    "mode": "Hybrid",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 15000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "Content Writing",
+      "Excel",
+      "Social Media Marketing"
+    ],
+    "preferred_skills": [
+      "Google Analytics",
+      "Market Research"
+    ],
+    "description": "Plan and execute digital campaigns to grow awareness of our CRM tool product across channels."
+  },
+  {
+    "id": "d04f2084-0875-48da-8352-24a9a774b41c",
+    "company": "Skyfield Ventures Pvt Ltd",
+    "role_title": "Security Analyst Intern",
+    "domain": "Cybersecurity",
+    "location": "Kolkata, India",
+    "mode": "Remote",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Linux",
+      "Networking",
+      "Problem Solving",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "Docker",
+      "Git"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our fintech app systems."
+  },
+  {
+    "id": "2fec953c-447c-4eec-b8e6-05545ac43cb8",
+    "company": "Fernwood Technologies",
+    "role_title": "Machine Learning Intern",
+    "domain": "Data Science",
+    "location": "Kochi, India",
+    "mode": "Remote",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 8000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "Machine Learning",
+      "SQL",
+      "Scikit-learn",
+      "Statistics"
+    ],
+    "preferred_skills": [
+      "PyTorch",
+      "TensorFlow"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our healthtech app team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "6ed36bf2-47c8-49cf-bbd2-2d6f0d481bf5",
+    "company": "Trueform Dynamics Inc",
+    "role_title": "Application Security Intern",
+    "domain": "Cybersecurity",
+    "location": "Kolkata, India",
+    "mode": "Onsite",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 15000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Linux",
+      "Problem Solving",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "CI/CD",
+      "Docker"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our payments gateway systems."
+  },
+  {
+    "id": "c25b9a3a-b16f-49db-baeb-4cd4149b8329",
+    "company": "Quantumly Networks Pvt Ltd",
+    "role_title": "DevOps Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Chennai, India",
+    "mode": "Hybrid",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "AWS",
+      "CI/CD",
+      "Docker",
+      "Linux",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Azure",
+      "Monitoring"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our e-commerce marketplace infrastructure."
+  },
+  {
+    "id": "c15d9a97-f0ab-41d2-82ff-eb0d1eda1957",
+    "company": "Wavecrest Solutions LLP",
+    "role_title": "Site Reliability Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Mumbai, India",
+    "mode": "Onsite",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "AWS",
+      "Git",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Jenkins"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our healthtech app infrastructure."
+  },
+  {
+    "id": "54162cdc-ca91-44f2-9c50-cde52e2fa56d",
+    "company": "Ironbridge Networks LLP",
+    "role_title": "DevOps Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Chennai, India",
+    "mode": "Hybrid",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 8000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "AWS",
+      "CI/CD",
+      "Docker",
+      "Linux",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Jenkins"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our CRM tool infrastructure."
+  },
+  {
+    "id": "1f517cf6-8681-4a2c-9a5c-75d5d4987a28",
+    "company": "Silverline Cloud Inc",
+    "role_title": "Backend Developer Intern",
+    "domain": "Software Development",
+    "location": "Remote",
+    "mode": "Hybrid",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Algorithms",
+      "Java",
+      "REST API",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "CI/CD"
+    ],
+    "description": "Work with the engineering team to design, build, and test features for our production IoT monitoring suite. You'll pair with senior engineers, write clean code, and ship real features used by customers."
+  },
+  {
+    "id": "4da229dc-3f84-4658-a11e-56d59cac2010",
+    "company": "Basecrest Software LLP",
+    "role_title": "SEO Intern",
+    "domain": "Digital Marketing",
+    "location": "Remote",
+    "mode": "Hybrid",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 8000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Content Writing",
+      "Excel",
+      "SEO"
+    ],
+    "preferred_skills": [
+      "Market Research"
+    ],
+    "description": "Plan and execute digital campaigns to grow awareness of our logistics tracker product across channels."
+  },
+  {
+    "id": "9cf401b3-0d32-4654-8820-496644e8f8db",
+    "company": "Nimbus Analytics Pvt Ltd",
+    "role_title": "Backend Developer Intern",
+    "domain": "Software Development",
+    "location": "Chennai, India",
+    "mode": "Hybrid",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Data Structures",
+      "Git",
+      "Python",
+      "REST API",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "Django",
+      "Docker",
+      "Kubernetes"
+    ],
+    "description": "Work with the engineering team to design, build, and test features for our production customer analytics platform. You'll pair with senior engineers, write clean code, and ship real features used by customers."
+  },
+  {
+    "id": "7b6c5c9a-ff7c-4c9a-ab50-5053595c77eb",
+    "company": "Bluepeak Digital Pvt Ltd",
+    "role_title": "React Developer Intern",
+    "domain": "Web Development",
+    "location": "Remote",
+    "mode": "Hybrid",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "CSS",
+      "Git",
+      "REST API"
+    ],
+    "preferred_skills": [
+      "Vue"
+    ],
+    "description": "Build and ship user-facing features for our customer analytics platform web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "7406b71d-5e7d-467c-93a0-7ce412d968b5",
+    "company": "Quantumly Robotics LLP",
+    "role_title": "React Developer Intern",
+    "domain": "Web Development",
+    "location": "Noida, India",
+    "mode": "Remote",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "Bootstrap",
+      "CSS",
+      "JavaScript",
+      "REST API",
+      "React"
+    ],
+    "preferred_skills": [
+      "Angular"
+    ],
+    "description": "Build and ship user-facing features for our healthtech app web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "d02c795d-e266-4003-9ab5-6d8f1a7ac34b",
+    "company": "Pixelforge Softworks Pvt Ltd",
+    "role_title": "Cybersecurity Intern",
+    "domain": "Cybersecurity",
+    "location": "Noida, India",
+    "mode": "Onsite",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Linux",
+      "Networking",
+      "Problem Solving",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "CI/CD",
+      "Git"
+    ],
+    "description": "Assist the security team with vulnerability assessments and secure code review for our SaaS dashboard systems."
+  },
+  {
+    "id": "7816cac3-d39c-4fa5-9ce0-271bc4f77cab",
+    "company": "Pixelforge Softworks Pvt Ltd",
+    "role_title": "Web Developer Intern",
+    "domain": "Web Development",
+    "location": "Kochi, India",
+    "mode": "Hybrid",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 18000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Git",
+      "JavaScript",
+      "REST API"
+    ],
+    "preferred_skills": [
+      "Angular",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "description": "Build and ship user-facing features for our e-commerce marketplace web app, working closely with design and backend teams on performance and accessibility."
+  },
+  {
+    "id": "4856924b-04ac-45ab-9bdf-9b9df7e39c25",
+    "company": "Clearwater Solutions Inc",
+    "role_title": "Cloud Engineering Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Pune, India",
+    "mode": "Hybrid",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "AWS",
+      "CI/CD",
+      "Docker"
+    ],
+    "preferred_skills": [
+      "Azure",
+      "GCP",
+      "Jenkins"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our CRM tool infrastructure."
+  },
+  {
+    "id": "445915c3-88da-4830-928a-3655201fb4f0",
+    "company": "Meridian Analytics Inc",
+    "role_title": "Business Analyst Intern",
+    "domain": "Business Analysis",
+    "location": "Kochi, India",
+    "mode": "Onsite",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "Data Analysis",
+      "Excel",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "JIRA",
+      "Power BI"
+    ],
+    "description": "Analyze business processes and data to recommend improvements for our fintech app operations."
+  },
+  {
+    "id": "ec09ba46-559f-4da4-bdeb-c8f21e7e11a6",
+    "company": "Foxglove Systems LLP",
+    "role_title": "Data Analyst Intern",
+    "domain": "Data Science",
+    "location": "Gurugram, India",
+    "mode": "Hybrid",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Pursuing B.Tech/B.E. (CS/IT preferred)",
+    "required_skills": [
+      "Machine Learning",
+      "Pandas",
+      "Python",
+      "SQL",
+      "Scikit-learn"
+    ],
+    "preferred_skills": [
+      "Deep Learning",
+      "PyTorch",
+      "Tableau"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our e-commerce marketplace team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "0e0d9c40-2a76-4c1a-8dea-a6146bee1782",
+    "company": "Silverline Cloud Inc",
+    "role_title": "Software Testing Intern",
+    "domain": "QA/Testing",
+    "location": "Jaipur, India",
+    "mode": "Remote",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "Problem Solving",
+      "Python",
+      "Selenium"
+    ],
+    "preferred_skills": [
+      "JIRA",
+      "REST API"
+    ],
+    "description": "Design and automate test suites for our chat platform platform, working with developers to catch regressions before release."
+  },
+  {
+    "id": "e384a163-1b08-4333-be53-6325a9321aff",
+    "company": "Meridian Analytics Inc",
+    "role_title": "DevOps Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Noida, India",
+    "mode": "Onsite",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Git",
+      "Linux",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Azure",
+      "GCP",
+      "Jenkins"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our logistics tracker infrastructure."
+  },
+  {
+    "id": "667f8015-fe57-4c63-bfcb-54d382c691d8",
+    "company": "Nimbus Networks LLP",
+    "role_title": "Java Developer Intern",
+    "domain": "Software Development",
+    "location": "Hyderabad, India",
+    "mode": "Hybrid",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 15000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "C++",
+      "Git",
+      "Java",
+      "REST API",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "Django",
+      "Spring Boot"
+    ],
+    "description": "Work with the engineering team to design, build, and test features for our production SaaS dashboard. You'll pair with senior engineers, write clean code, and ship real features used by customers."
+  },
+  {
+    "id": "2082a0c7-85a0-4f69-b435-52912119423e",
+    "company": "Nimbus Analytics Pvt Ltd",
+    "role_title": "QA Engineering Intern",
+    "domain": "QA/Testing",
+    "location": "Mumbai, India",
+    "mode": "Onsite",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 30000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Java",
+      "Problem Solving",
+      "Selenium"
+    ],
+    "preferred_skills": [
+      "CI/CD",
+      "Docker",
+      "REST API"
+    ],
+    "description": "Design and automate test suites for our SaaS dashboard platform, working with developers to catch regressions before release."
+  },
+  {
+    "id": "543c6eb7-bbec-4e2b-83b8-1bc6edcbd154",
+    "company": "Fernwood Digital",
+    "role_title": "Backend Developer Intern",
+    "domain": "Software Development",
+    "location": "Bengaluru, India",
+    "mode": "Onsite",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Algorithms",
+      "JavaScript",
+      "REST API",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "Kubernetes",
+      "Spring Boot"
+    ],
+    "description": "Work with the engineering team to design, build, and test features for our production healthtech app. You'll pair with senior engineers, write clean code, and ship real features used by customers."
+  },
+  {
+    "id": "b18ca187-7520-47d0-94a6-6cf03ca7a64e",
+    "company": "Amberline Technologies LLP",
+    "role_title": "Android Developer Intern",
+    "domain": "Mobile Development",
+    "location": "Gurugram, India",
+    "mode": "Remote",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "Git",
+      "Java",
+      "Kotlin",
+      "REST API",
+      "Swift"
+    ],
+    "preferred_skills": [
+      "React Native",
+      "SQLite"
+    ],
+    "description": "Build features for our IoT monitoring suite mobile app used by thousands of users, from UI polish to backend integration."
+  },
+  {
+    "id": "dfd410c6-79be-455a-bfb4-c88e050d7961",
+    "company": "Quantumly Software Pvt Ltd",
+    "role_title": "Software Testing Intern",
+    "domain": "QA/Testing",
+    "location": "Pune, India",
+    "mode": "Hybrid",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 8000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "Git",
+      "Java",
+      "Problem Solving",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "CI/CD",
+      "JIRA",
+      "REST API"
+    ],
+    "description": "Design and automate test suites for our fintech app platform, working with developers to catch regressions before release."
+  },
+  {
+    "id": "a27cc410-6481-4af5-86d7-41cb07c3f9b9",
+    "company": "Fernwood Analytics Pvt Ltd",
+    "role_title": "Test Automation Intern",
+    "domain": "QA/Testing",
+    "location": "Mumbai, India",
+    "mode": "Hybrid",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 25000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Git",
+      "Python",
+      "SQL",
+      "Selenium"
+    ],
+    "preferred_skills": [
+      "Docker",
+      "REST API"
+    ],
+    "description": "Design and automate test suites for our e-commerce marketplace platform, working with developers to catch regressions before release."
+  },
+  {
+    "id": "1f0bc70f-ad09-49f4-a7a8-399cad4cf339",
+    "company": "Wavecrest Solutions Pvt Ltd",
+    "role_title": "Data Science Intern",
+    "domain": "Data Science",
+    "location": "Chennai, India",
+    "mode": "Hybrid",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "Data Analysis",
+      "NumPy",
+      "Pandas",
+      "Python",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "Deep Learning",
+      "Tableau"
+    ],
+    "description": "Analyze large datasets and build predictive models to support our payments gateway team's decisions. Exposure to the full ML lifecycle: data cleaning, modeling, evaluation, and deployment."
+  },
+  {
+    "id": "48f02dae-3295-4af4-975c-aa56330673b9",
+    "company": "Quantumly Robotics LLP",
+    "role_title": "Cloud Engineering Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Kochi, India",
+    "mode": "Hybrid",
+    "duration_weeks": 24,
+    "stipend_inr_per_month": 15000,
+    "min_education": "Pursuing B.Sc (CS/IT/Stats)",
+    "required_skills": [
+      "AWS",
+      "CI/CD",
+      "Docker",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Azure"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our fintech app infrastructure."
+  },
+  {
+    "id": "7bea9af9-cbc9-4838-a7c9-81a28e6599c4",
+    "company": "Nimbus Networks LLP",
+    "role_title": "Platform Engineering Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Hyderabad, India",
+    "mode": "Hybrid",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 20000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "AWS",
+      "CI/CD",
+      "Docker",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Azure",
+      "Kubernetes"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our payments gateway infrastructure."
+  },
+  {
+    "id": "d014cf96-a323-4060-8584-dc151c017775",
+    "company": "Amberline Technologies LLP",
+    "role_title": "SEO Intern",
+    "domain": "Digital Marketing",
+    "location": "Hyderabad, India",
+    "mode": "Onsite",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Pursuing B.Tech/B.E.",
+    "required_skills": [
+      "Content Writing",
+      "Excel",
+      "SEO",
+      "Social Media Marketing"
+    ],
+    "preferred_skills": [
+      "Communication",
+      "Google Analytics",
+      "Market Research"
+    ],
+    "description": "Plan and execute digital campaigns to grow awareness of our edtech platform product across channels."
+  },
+  {
+    "id": "aeabe1ac-701f-439b-b4dc-d40963b29154",
+    "company": "Foxglove Systems Inc",
+    "role_title": "Platform Engineering Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Noida, India",
+    "mode": "Hybrid",
+    "duration_weeks": 10,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Any Bachelor's degree (final year)",
+    "required_skills": [
+      "AWS",
+      "CI/CD",
+      "Git",
+      "Linux",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Azure",
+      "GCP"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our e-commerce marketplace infrastructure."
+  },
+  {
+    "id": "8edf07e0-aa1f-422e-b1d6-b4ab1bc1c930",
+    "company": "Trueform Technologies Pvt Ltd",
+    "role_title": "Mobile App Developer Intern",
+    "domain": "Mobile Development",
+    "location": "Chennai, India",
+    "mode": "Onsite",
+    "duration_weeks": 8,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Pursuing MBA",
+    "required_skills": [
+      "Git",
+      "Java",
+      "Kotlin",
+      "REST API",
+      "Swift"
+    ],
+    "preferred_skills": [
+      "SQLite"
+    ],
+    "description": "Build features for our e-commerce marketplace mobile app used by thousands of users, from UI polish to backend integration."
+  },
+  {
+    "id": "fc4b8515-904b-4431-b5d2-caecb12b1fd2",
+    "company": "Trueform Studio",
+    "role_title": "Product Design Intern",
+    "domain": "UI/UX Design",
+    "location": "Noida, India",
+    "mode": "Hybrid",
+    "duration_weeks": 16,
+    "stipend_inr_per_month": 10000,
+    "min_education": "Pursuing BCA/MCA",
+    "required_skills": [
+      "Adobe XD",
+      "Figma",
+      "User Research",
+      "Wireframing"
+    ],
+    "preferred_skills": [
+      "Design Systems",
+      "HTML",
+      "Prototyping"
+    ],
+    "description": "Design intuitive, accessible interfaces for our CRM tool product, collaborating closely with engineering and product teams."
+  },
+  {
+    "id": "1f0cb25b-5656-486d-ba03-9dd994baf2c0",
+    "company": "Pixelforge Ventures LLP",
+    "role_title": "Cloud Engineering Intern",
+    "domain": "DevOps/Cloud",
+    "location": "Hyderabad, India",
+    "mode": "Remote",
+    "duration_weeks": 12,
+    "stipend_inr_per_month": 12000,
+    "min_education": "Pursuing M.Tech/M.E.",
+    "required_skills": [
+      "AWS",
+      "CI/CD",
+      "Docker",
+      "Git"
+    ],
+    "preferred_skills": [
+      "Azure",
+      "Terraform"
+    ],
+    "description": "Support the platform team in automating deployments, improving CI/CD pipelines, and monitoring reliability for our healthtech app infrastructure."
+  }
+]

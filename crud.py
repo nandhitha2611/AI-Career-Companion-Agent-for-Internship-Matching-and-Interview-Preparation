@@ -1,5 +1,6 @@
 import uuid
 from datetime import datetime, timezone
+import json
 
 from sqlalchemy.orm import Session
 import models
@@ -51,16 +52,44 @@ def revoke_refresh_token(db: Session, db_token: models.RefreshToken) -> None:
     db_token.revoked = True
     db.commit()
 
-def create_or_update_profile(db: Session, user_id: uuid.UUID, profile_data: schemas.StudentProfileCreate) -> models.StudentProfile:
-    profile = db.query(models.StudentProfile).filter(models.StudentProfile.user_id == user_id).first()
-    if profile:
-        for key, value in profile_data.model_dump(exclude_unset=True).items():
-            setattr(profile, key, value)
-    else:
-        profile = models.StudentProfile(user_id=user_id, **profile_data.model_dump())
+def create_or_update_profile(
+    db: Session,
+    user_id: uuid.UUID,
+    profile_data: schemas.StudentProfileCreate
+):
+    data = profile_data.model_dump()
+
+    profile = (
+        db.query(models.StudentProfile)
+        .filter(models.StudentProfile.user_id == user_id)
+        .first()
+    )
+
+    if not profile:
+        profile = models.StudentProfile(
+            user_id=user_id
+        )
         db.add(profile)
+
+    profile.full_name = data.get("full_name")
+    profile.email = data.get("email")
+    profile.phone = data.get("phone")
+    profile.address = data.get("address")
+    profile.linkedin = data.get("linkedin")
+    profile.github = data.get("github")
+    profile.summary = data.get("summary")
+
+    profile.technical_skills = data.get("technical_skills", [])
+    profile.soft_skills = data.get("soft_skills", [])
+    profile.education = data.get("education", [])
+    profile.work_experience = data.get("work_experience", [])
+    profile.projects = data.get("projects", [])
+    profile.internships = data.get("internships", [])
+    profile.certifications = data.get("certifications", [])
+
     db.commit()
     db.refresh(profile)
+
     return profile
 
 

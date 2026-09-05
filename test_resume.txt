@@ -1,0 +1,50 @@
+ARJUN KUMAR SHARMA
+Chennai, Tamil Nadu | +91-98765-43210 | arjun.sharma@email.com
+LinkedIn: linkedin.com/in/arjunkumarsharma | GitHub: github.com/arjunksharma
+PROFESSIONAL SUMMARY
+Enthusiastic Computer Science Engineering fresher with strong foundation in core programming concepts and full-stack development. Eager to learn and contribute to real-world projects through an internship. Passionate about problem-solving, web development, and building scalable applications. Seeking an internship opportunity to apply academic knowledge and gain practical industry experience.
+EDUCATION
+Bachelor of Engineering in Computer Science
+Anna University, Chennai | Expected Graduation: June 2025 | CGPA: 8.2/10
+Higher Secondary School (XII)
+Vidya Nivas Public School, Chennai | Completed: March 2021 | Percentage: 94%
+PROJECTS
+College Management System
+Java, MySQL, Swing GUI | Academic Project | 2024
+• Built a desktop application for managing student records, courses, and grades
+• Implemented user authentication and role-based access control for admin and students
+• Designed database schema with normalized tables and optimized queries for data retrieval
+Weather Forecast Web Application
+HTML5, CSS3, JavaScript, OpenWeatherMap API | Learning Project | 2023
+• Created a responsive web application that fetches real-time weather data from public API
+• Implemented search functionality and dynamic UI updates using vanilla JavaScript
+• Added features like temperature unit conversion and location-based weather display
+INTERNSHIPS
+Summer Internship - Web Development
+InfoLearn Academy, Chennai | June 2023 - July 2023
+• Completed hands-on training in HTML, CSS, JavaScript, and React fundamentals
+• Built 3 static websites and 1 simple React component-based project during the program
+• Learned best practices in web design, responsive layouts, and browser compatibility
+SKILLS
+Languages: Java, Python, JavaScript, SQL, HTML5, CSS3
+Frontend: React, CSS Flexbox, Responsive Design, Bootstrap
+Backend: Core Java, JDBC, Basic MySQL database design
+Tools: Git, GitHub, VS Code, MySQL Workbench, Postman
+Others: Data Structures, OOP concepts, API integration, Problem-solving
+CERTIFICATIONS & ONLINE COURSES
+• The Complete JavaScript Course 2024 - Udemy (In Progress)
+• React - The Complete Guide - Udemy (In Progress)
+• Java Programming Masterclass - Udemy (Completed)
+• SQL for Data Analysis - Coursera (Completed)
+ACHIEVEMENTS
+• Participated in College Hackathon 2024 - Built a real-time notification system
+• HackerRank 5-Star badge in Problem Solving (Java)
+• Ranked in top 20% in Data Structures course at university
+• Active member of the college coding club - organized 2 programming workshops
+LANGUAGES
+English (Fluent) | Hindi (Fluent) | Tamil (Native) | Kannada (Basic)
+ADDITIONAL INFORMATION
+• Quick learner with strong grasp of data structures and algorithms
+• Excellent problem-solving and analytical skills
+• Team player with good communication skills and ability to collaborate effectively
+• Open to learning new technologies and frameworks; self-motivated and dedicated

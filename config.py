@@ -1,25 +1,28 @@
-# This file centralizes all app "settings" so we never hardcode secrets or
-# environment-specific values (like DB passwords) directly in the code.
-# pydantic-settings automatically reads matching values from the .env file
-# and validates their types (e.g. access_token_expire_minutes must be an int).
 from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    # These two are required — the app will refuse to start without them.
+    # Required settings
     database_url: str
     secret_key: str
 
-    # These have defaults, so .env can override them but doesn't have to.
+    # Auth defaults
     algorithm: str = "HS256"
     access_token_expire_minutes: int = 30
     refresh_token_expire_days: int = 7
 
+    # Groq settings
+    groq_api_key: str | None = None
+    groq_model: str = "openai/gpt-oss-120b"
+
+    # RAG & Vector Search settings (paths updated to match your root structure)
+    embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2"
+    internship_data_path: str = "data/internships.json"
+    internship_index_dir: str = "data/faiss_internship_index"
+
     class Config:
-        env_file = ".env"   # tells pydantic-settings where to look
-        extra = "ignore"    # ignore unrelated keys in .env (e.g. GROQ_API_KEY)
+        env_file = ".env"
+        extra = "ignore"
 
 
-# Created once and imported everywhere else (app.database, app.security, ...)
-# so settings are loaded a single time when the app starts.
 settings = Settings()
