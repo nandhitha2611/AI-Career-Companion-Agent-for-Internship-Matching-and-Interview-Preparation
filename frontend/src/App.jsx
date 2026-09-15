@@ -7,6 +7,9 @@ import AuthForm from './components/Authform';
 import Internships from './components/Internships';
 import MatchInternships from './components/MatchInternships';
 import UserProfile from './components/UserProfile';
+import ChatWidget from './components/ChatWidget';
+import AtsCheckerPage from './components/AtsCheckerPage';
+import InterviewPreparation from './components/InterviewPreparation';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('home');
@@ -23,12 +26,12 @@ export default function App() {
 
   const handleLoginSuccess = (userData) => {
     setIsAuthenticated(true);
-    setUser(userData || { name: 'Alex' }); 
+    setUser(userData);
     setActiveTab('home');
   };
 
   return (
-    <div className="min-h-screen w-full bg-white text-slate-900 font-sans antialiased">
+    <div className="min-h-screen w-full bg-white text-slate-900 font-sans antialiased relative">
       {activeTab !== 'auth' && (
         <Header
           activeTab={activeTab}
@@ -66,10 +69,24 @@ export default function App() {
         </main>
       )}
 
+      {/* ATS SCORE TAB */}
+      {activeTab === 'ats-score' && (
+        <main className="w-full">
+          <AtsCheckerPage initialResumeId={user?.resume_id} />
+        </main>
+      )}
+
       {/* MATCH INTERNSHIPS TAB */}
       {activeTab === 'match-internships' && (
         <main className="w-full">
           <MatchInternships />
+        </main>
+      )}
+
+      {/* INTERVIEW PREP TAB */}
+      {activeTab === 'interview-prep' && (
+        <main className="w-full">
+          <InterviewPreparation />
         </main>
       )}
 
@@ -79,6 +96,9 @@ export default function App() {
           <UserProfile />
         </main>
       )}
+
+      {/* RENDER CHATBOT FLOATING WIDGET GLOBALLY */}
+      <ChatWidget userId={user?.id} />
     </div>
   );
 }

@@ -1,8 +1,9 @@
 import uuid
 from datetime import datetime, timezone
+from typing import Any
 
-from sqlalchemy import String, Boolean, DateTime, ForeignKey, Integer, JSON, Column
-from sqlalchemy.dialects.postgresql import UUID
+from sqlalchemy import String, Boolean, Column, DateTime, ForeignKey, Integer, JSON, Text
+from sqlalchemy.dialects.postgresql import JSONB, UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from database import Base
@@ -82,13 +83,15 @@ class StudentProfile(Base):
         nullable=True
     )
 
-    technical_skills = Column(JSON, nullable=True)
-    soft_skills = Column(JSON, nullable=True)
-    education = Column(JSON, nullable=True)
-    work_experience = Column(JSON, nullable=True)
-    projects = Column(JSON, nullable=True)
-    internships = Column(JSON, nullable=True)
-    certifications = Column(JSON, nullable=True)
+    technical_skills: Mapped[list[Any] | None] = mapped_column(JSONB, nullable=True)
+    soft_skills: Mapped[list[Any] | None] = mapped_column(JSONB, nullable=True)
+    education: Mapped[list[Any] | None] = mapped_column(JSONB, nullable=True)
+    work_experience: Mapped[list[Any] | None] = mapped_column(JSONB, nullable=True)
+    projects: Mapped[list[Any] | None] = mapped_column(JSONB, nullable=True)
+    internships: Mapped[list[Any] | None] = mapped_column(JSONB, nullable=True)
+    certifications: Mapped[list[Any] | None] = mapped_column(JSONB, nullable=True)
+    languages: Mapped[list[Any] | None] = mapped_column(JSONB, nullable=True)
+    achievements: Mapped[list[Any] | None] = mapped_column(JSONB, nullable=True)
 
     user: Mapped["User"] = relationship(
         back_populates="profile"
@@ -169,3 +172,35 @@ class Resume(Base):
     parsed_data= Column(JSON, nullable=True)
 
     user: Mapped["User"] = relationship(back_populates="resumes")
+
+
+class InternshipApplication(Base):
+    __tablename__ = "internship_applications"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    user_id: Mapped[uuid.UUID] = mapped_column(
+        ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True
+    )
+    resume_id: Mapped[uuid.UUID] = mapped_column(
+        ForeignKey("resumes.id", ondelete="RESTRICT"), nullable=False
+    )
+    internship_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False, index=True)
+    role_title: Mapped[str] = mapped_column(String(255), nullable=False)
+    company: Mapped[str] = mapped_column(String(255), nullable=False)
+    cover_letter: Mapped[str | None] = mapped_column(String(10000), nullable=True)
+    status: Mapped[str] = mapped_column(String(50), nullable=False, default="submitted")
+    submitted_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=lambda: datetime.now(timezone.utc)
+    )
+
+    resume: Mapped["Resume"] = relationship()
+
+class ChatConversation(Base):
+    __tablename__ = "chat_conversations"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(String, index=True, nullable=False)
+    session_id = Column(String, index=True, nullable=False)
+    user_query = Column(Text, nullable=False)
+    assistant_response = Column(Text, nullable=False)
+    timestamp = Column(DateTime, default=datetime.utcnow)

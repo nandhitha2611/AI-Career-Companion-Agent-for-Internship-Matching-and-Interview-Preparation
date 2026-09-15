@@ -1,17 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { loginUser, registerUser } from '../api';
+import { loginUser, registerUser, resetPassword } from '../api';
 
 export default function AuthForm({ initialMode = 'login', onLogin }) {
   const [isSignUp, setIsSignUp] = useState(initialMode === 'signup');
+  const [isForgotPassword, setIsForgotPassword] = useState(false);
+  const [resetStep, setResetStep] = useState('email');
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
     email: '',
     password: '',
     full_name: '',
   });
+  const [resetData, setResetData] = useState({ email: '', new_password: '', confirm_password: '' });
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [resetSuccess, setResetSuccess] = useState('');
 
   useEffect(() => {
     setIsSignUp(initialMode === 'signup');
@@ -21,21 +25,73 @@ export default function AuthForm({ initialMode = 'login', onLogin }) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const fetchUserProfile = async (token) => {
+  const handleResetChange = (e) => {
+    setResetData({ ...resetData, [e.target.name]: e.target.value });
+  };
+
+  const openForgotPassword = () => {
+    setError('');
+    setResetSuccess('');
+    setResetData({ email: formData.email, new_password: '', confirm_password: '' });
+    setResetStep('email');
+    setIsForgotPassword(true);
+  };
+
+  const returnToLogin = () => {
+    setIsForgotPassword(false);
+    setResetStep('email');
+    setError('');
+  };
+
+  const handleResetSubmit = async (e) => {
+    e.preventDefault();
+    setError('');
+    setResetSuccess('');
+
+    if (resetStep === 'email') {
+      setResetStep('password');
+      return;
+    }
+
+    if (resetData.new_password !== resetData.confirm_password) {
+      setError('New passwords do not match.');
+      return;
+    }
+
+    setLoading(true);
     try {
-      const response = await axios.get('http://127.0.0.1:8000/profile/', {
-        headers: {
-          Authorization: `Bearer ${token}`,
-          accept: 'application/json',
-        },
-      });
-      // Reads first_name directly from your Swagger response schema
-      return response.data?.first_name || response.data?.full_name || '';
+      await resetPassword({ email: resetData.email, new_password: resetData.new_password });
+      setFormData((current) => ({ ...current, email: resetData.email, password: '' }));
+      setIsForgotPassword(false);
+      setResetStep('email');
+      setResetData({ email: '', new_password: '', confirm_password: '' });
+      setResetSuccess('Password reset successfully. You can now sign in.');
     } catch (err) {
-      console.error('Failed to fetch profile:', err);
-      return '';
+      setError(
+        err.response?.data?.detail?.[0]?.msg ||
+        err.response?.data?.detail ||
+        'Unable to reset password.'
+      );
+    } finally {
+      setLoading(false);
     }
   };
+
+  const fetchUserProfile = async (token) => {
+  try {
+    const response = await axios.get('http://127.0.0.1:8000/profile/', {
+      headers: {
+        Authorization: `Bearer ${token}`,
+        accept: 'application/json',
+      },
+    });
+
+    return response.data || {};
+  } catch (err) {
+    console.error('Failed to fetch profile:', err);
+    return {};
+  }
+};
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -55,15 +111,23 @@ export default function AuthForm({ initialMode = 'login', onLogin }) {
         localStorage.setItem('token', token);
 
         // 2. Fetch profile using the /profile/ endpoint
-        const fetchedName = await fetchUserProfile(token);
+        const userProfile = await fetchUserProfile(token);
 
-        // 3. Set display name priority: fetched name -> state name -> email prefix
-        const displayName =
-          fetchedName.trim() ||
-          formData.full_name.trim() ||
-          formData.email.split('@')[0];
+// 3. Get the user's name
+const fetchedName =
+  userProfile?.full_name ||
+  formData.full_name ||
+  formData.email.split('@')[0];
 
-        onLogin({ token, name: displayName });
+const displayName = fetchedName.trim();
+
+// 4. Pass the actual user ID to App.jsx
+onLogin({
+  token,
+  id: userProfile?.user_id,
+  name: displayName,
+  email: userProfile?.email || formData.email,
+});
       } else {
         setError('No access token returned from backend.');
       }
@@ -120,8 +184,16 @@ export default function AuthForm({ initialMode = 'login', onLogin }) {
               {isSignUp ? 'Create Account' : 'Sign in'}
             </h2>
             <p className="text-xs text-gray-500 mb-6">
-              {isSignUp ? 'Use your details to register below' : 'Enter your credentials to access your dashboard'}
+              {isForgotPassword
+                ? resetStep === 'email' ? 'Enter your account email to continue' : 'Choose a new password for your account'
+                : isSignUp ? 'Use your details to register below' : 'Enter your credentials to access your dashboard'}
             </p>
+
+            {resetSuccess && (
+              <div className="bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs p-3 rounded-xl mb-4">
+                {resetSuccess}
+              </div>
+            )}
 
             {error && (
               <div className="bg-red-50 border border-red-200 text-red-600 text-xs p-3 rounded-xl mb-4">
@@ -129,6 +201,63 @@ export default function AuthForm({ initialMode = 'login', onLogin }) {
               </div>
             )}
 
+            {isForgotPassword ? (
+              <form onSubmit={handleResetSubmit} className="space-y-4">
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    value={resetData.email}
+                    onChange={handleResetChange}
+                    required
+                    readOnly={resetStep === 'password'}
+                    placeholder="Email address"
+                    className="w-full bg-gray-100/80 border border-transparent focus:border-blue-500 focus:bg-white text-gray-800 text-sm rounded-xl py-3 px-4 outline-none transition-all read-only:opacity-70"
+                  />
+                </div>
+
+                {resetStep === 'password' && (
+                  <>
+                    <input
+                      type="password"
+                      name="new_password"
+                      value={resetData.new_password}
+                      onChange={handleResetChange}
+                      required
+                      minLength={8}
+                      placeholder="New password"
+                      className="w-full bg-gray-100/80 border border-transparent focus:border-blue-500 focus:bg-white text-gray-800 text-sm rounded-xl py-3 px-4 outline-none transition-all"
+                    />
+                    <input
+                      type="password"
+                      name="confirm_password"
+                      value={resetData.confirm_password}
+                      onChange={handleResetChange}
+                      required
+                      minLength={8}
+                      placeholder="Confirm new password"
+                      className="w-full bg-gray-100/80 border border-transparent focus:border-blue-500 focus:bg-white text-gray-800 text-sm rounded-xl py-3 px-4 outline-none transition-all"
+                    />
+                  </>
+                )}
+
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="w-full bg-blue-900 hover:bg-blue-800 text-white font-medium py-3 rounded-xl text-sm transition-all shadow-md hover:shadow-lg disabled:opacity-50"
+                >
+                  {loading ? 'Processing...' : resetStep === 'email' ? 'Continue' : 'Reset Password'}
+                </button>
+
+                <button
+                  type="button"
+                  onClick={returnToLogin}
+                  className="w-full text-blue-600 font-semibold text-xs hover:underline"
+                >
+                  Back to Sign In
+                </button>
+              </form>
+            ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
               {isSignUp && (
                 <div>
@@ -196,6 +325,18 @@ export default function AuthForm({ initialMode = 'login', onLogin }) {
                 </div>
               </div>
 
+              {!isSignUp && (
+                <div className="text-right -mt-2">
+                  <button
+                    type="button"
+                    onClick={openForgotPassword}
+                    className="text-blue-600 text-xs font-semibold hover:underline"
+                  >
+                    Forgot Password?
+                  </button>
+                </div>
+              )}
+
               <button
                 type="submit"
                 disabled={loading}
@@ -204,6 +345,7 @@ export default function AuthForm({ initialMode = 'login', onLogin }) {
                 {loading ? 'Processing...' : isSignUp ? 'Sign Up' : 'Sign In'}
               </button>
             </form>
+            )}
 
             <div className="mt-6 text-center text-xs text-gray-500">
               {isSignUp ? 'Already have an account?' : "Don't have an account?"}{' '}

@@ -105,14 +105,33 @@ class StudentProfileCreate(BaseModel):
     internships: List[Dict[str, Any]] = Field(default_factory=list)
 
     certifications: List[Any] = Field(default_factory=list)
+    languages: List[str] = Field(default_factory=list)
+    achievements: List[str] = Field(default_factory=list)
 
 
 class StudentProfileOut(StudentProfileCreate):
+    model_config = ConfigDict(from_attributes=True)
+
     id: uuid.UUID
     user_id: uuid.UUID
 
-    class Config:
-        from_attributes = True
+
+class InternshipApplicationCreate(BaseModel):
+    internship_id: uuid.UUID
+    resume_id: uuid.UUID
+    role_title: str = Field(min_length=1, max_length=255)
+    company: str = Field(min_length=1, max_length=255)
+    cover_letter: Optional[str] = Field(default=None, max_length=10000)
+
+
+class InternshipApplicationOut(InternshipApplicationCreate):
+    model_config = ConfigDict(from_attributes=True)
+
+    id: uuid.UUID
+    user_id: uuid.UUID
+    resume_filename: str
+    status: str
+    submitted_at: datetime
 
 
 class CoverLetterGenerateRequest(BaseModel):
@@ -130,3 +149,24 @@ class CoverLetterGenerateRequest(BaseModel):
 class CoverLetterResponse(BaseModel):
     cover_letter: str
     status: str = "success"
+
+class ChatRequest(BaseModel):
+    user_id: str
+    session_id: str
+    message: str
+
+class ChatResponse(BaseModel):
+    user_id: str
+    session_id: str
+    response: str
+    sources: List[str]
+
+class InterviewAgentRequest(BaseModel):
+    message: str = Field(..., description="Question or prompt for the Interview Preparation Agent")
+    target_role: Optional[str] = Field(None, description="Optional target role for tailored interview questions")
+    document_text: Optional[str] = Field(None, description="Optional extracted text from uploaded document")
+
+class InterviewAgentResponse(BaseModel):
+    response: str
+    resume_found: bool
+    used_fallback_profile: bool

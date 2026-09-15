@@ -1,18 +1,48 @@
-import React, { useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
+import { applyToInternship, getResumes } from '../api';
 
 const API_BASE_URL = 'http://localhost:8000';
 
-export default function InternshipDetail({ internship, onBack, selectedFile }) {
+export default function InternshipDetail({ internship, onBack, selectedResume }) {
   const [showApplyModal, setShowApplyModal] = useState(false);
   const [coverLetterOption, setCoverLetterOption] = useState('none'); // 'none' | 'ai' | 'custom'
   const [coverLetterText, setCoverLetterText] = useState('');
   const [isGenerating, setIsGenerating] = useState(false);
   const [error, setError] = useState(null);
   const [applied, setApplied] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [savedResumes, setSavedResumes] = useState([]);
 
   // Resume state management inside modal
-  const [activeResumeFile, setActiveResumeFile] = useState(selectedFile || null);
+  const [activeResume, setActiveResume] = useState(selectedResume || null);
   const fileInputRef = useRef(null);
+  const activeResumeFile = activeResume
+    ? { ...activeResume, name: activeResume.original_filename || activeResume.name }
+    : null;
+
+  const loadSavedResumes = async () => {
+    try {
+      const response = await getResumes();
+      const resumeList = response.data || [];
+      setSavedResumes(resumeList);
+      if (!activeResume && resumeList.length > 0) {
+        setActiveResume(resumeList[0]);
+      }
+    } catch {
+      setSavedResumes([]);
+    }
+  };
+
+  useEffect(() => {
+    if (showApplyModal) {
+      loadSavedResumes();
+    }
+  }, [showApplyModal]);
+
+  const openApplyModal = () => {
+    setError(null);
+    setShowApplyModal(true);
+  };
 
   if (!internship) return null;
 
@@ -24,13 +54,42 @@ export default function InternshipDetail({ internship, onBack, selectedFile }) {
   const matchedSkills = internship.matched_skills || internship.matching_skills || internship.required_skills || [];
   const missingSkills = internship.missing_skills || internship.skill_gaps || [];
 
-  const handleResumeChange = (e) => {
-    if (e.target.files && e.target.files[0]) {
-      setActiveResumeFile(e.target.files[0]);
+  const handleResumeChange = async (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setError(null);
+    try {
+      const token = localStorage.getItem('token') || localStorage.getItem('access_token');
+      const formData = new FormData();
+      formData.append('file', file);
+      const response = await fetch(`${API_BASE_URL}/resume/upload`, {
+        method: 'POST',
+        headers: token ? { Authorization: `Bearer ${token}` } : {},
+        body: formData,
+      });
+
+      if (!response.ok) {
+        const data = await response.json().catch(() => ({}));
+        throw new Error(data.detail || 'Failed to upload the selected resume.');
+      }
+
+      const uploadedResume = await response.json();
+      setActiveResume(uploadedResume);
+      setSavedResumes((currentResumes) => [uploadedResume, ...currentResumes]);
+    } catch (err) {
+      setError(err.message || 'Failed to upload the selected resume.');
+    } finally {
+      e.target.value = '';
     }
   };
 
   const handleGenerateAICoverLetter = async () => {
+    if (!activeResume?.id) {
+      setError('Please select an uploaded resume before generating a cover letter.');
+      return;
+    }
+
     setIsGenerating(true);
     setError(null);
 
@@ -45,11 +104,10 @@ export default function InternshipDetail({ internship, onBack, selectedFile }) {
           ...authHeaders,
         },
         body: JSON.stringify({
-          internship_id: internship.id,
+          resume_id: activeResume?.id,
           role_title: roleTitle,
           company_name: company,
-          description: internship.description || '',
-          required_skills: matchedSkills.concat(missingSkills),
+          skills_required: matchedSkills.concat(missingSkills),
         }),
       });
 
@@ -75,9 +133,29 @@ export default function InternshipDetail({ internship, onBack, selectedFile }) {
     }
   };
 
-  const handleFinalSubmit = () => {
-    setApplied(true);
-    setShowApplyModal(false);
+  const handleFinalSubmit = async () => {
+    if (!activeResume?.id) {
+      setError('Please select an uploaded resume before submitting.');
+      return;
+    }
+
+    setSubmitting(true);
+    setError(null);
+    try {
+      await applyToInternship({
+        internship_id: internship.id,
+        resume_id: activeResume.id,
+        role_title: roleTitle,
+        company,
+        cover_letter: coverLetterOption === 'none' ? null : coverLetterText || null,
+      });
+      setApplied(true);
+      setShowApplyModal(false);
+    } catch (err) {
+      setError(err.response?.data?.detail || 'Failed to submit application. Please try again.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -106,7 +184,7 @@ export default function InternshipDetail({ internship, onBack, selectedFile }) {
 
           <button
             type="button"
-            onClick={() => setShowApplyModal(true)}
+            onClick={openApplyModal}
             disabled={applied}
             className={`px-6 py-2.5 rounded-xl text-xs font-semibold text-white transition-all shadow-sm ${
               applied
@@ -207,6 +285,17 @@ export default function InternshipDetail({ internship, onBack, selectedFile }) {
                   </button>
                 </div>
               </div>
+              {savedResumes.length > 0 && (
+                <select
+                  value={activeResume?.id || ''}
+                  onChange={(e) => setActiveResume(savedResumes.find((resume) => resume.id === e.target.value) || null)}
+                  className="w-full bg-white border border-gray-200 rounded-lg px-2 py-1.5 text-[11px] text-gray-700 outline-none focus:border-blue-500"
+                >
+                  {savedResumes.map((resume) => (
+                    <option key={resume.id} value={resume.id}>{resume.original_filename}</option>
+                  ))}
+                </select>
+              )}
             </div>
 
             {/* Cover Letter Selector */}
@@ -293,10 +382,10 @@ export default function InternshipDetail({ internship, onBack, selectedFile }) {
               <button
                 type="button"
                 onClick={handleFinalSubmit}
-                disabled={isGenerating}
+                disabled={isGenerating || submitting}
                 className="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-semibold shadow-sm transition-all"
               >
-                Confirm & Submit Application
+                {submitting ? 'Submitting...' : 'Confirm & Submit Application'}
               </button>
             </div>
 

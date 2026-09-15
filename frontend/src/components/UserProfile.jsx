@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import AccountSettings from './AccountSettings.jsx';
 
 const API_BASE_URL = 'http://localhost:8000';
 
@@ -91,6 +92,19 @@ const TagInput = ({ label, tags, onChange, placeholder }) => {
     }
   };
 
+  const getCleanToken = () => {
+  let token = localStorage.getItem('token') || localStorage.getItem('access_token');
+  if (token && (token.startsWith('{') || token.startsWith('"'))) {
+    try {
+      const parsed = JSON.parse(token);
+      token = typeof parsed === 'object' ? parsed.access_token || parsed.token : parsed;
+    } catch {
+      token = token.replace(/"/g, '');
+    }
+  }
+  return token || '';
+};
+
   return (
     <div className="space-y-1.5">
       <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider">{label}</label>
@@ -164,10 +178,14 @@ export default function UserProfile() {
   const [activeTab, setActiveTab] = useState('profile');
   const [user, setUser] = useState(null);
   const [profile, setProfile] = useState(initialProfileState);
+  const [applications, setApplications] = useState([]);
+  const [resumes, setResumes] = useState([]);
 
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [parsing, setParsing] = useState(false);
+  const [resumeToDelete, setResumeToDelete] = useState(null);
+  const [deletingResume, setDeletingResume] = useState(false);
   const [message, setMessage] = useState({ type: '', text: '' });
 
   const resumeUploadRef = useRef(null);
@@ -238,8 +256,20 @@ export default function UserProfile() {
               projects: deduplicateByTitle(parseArray(data.projects)),
               internships: parseArray(data.internships),
               certifications: parseArray(data.certifications),
+              languages: parseArray(data.languages),
+              achievements: parseArray(data.achievements),
             }));
           }
+        }
+
+        const applicationsRes = await fetch(`${API_BASE_URL}/applications/`, { headers });
+        if (applicationsRes.ok && isMounted) {
+          setApplications(await applicationsRes.json());
+        }
+
+        const resumesRes = await fetch(`${API_BASE_URL}/resume/`, { headers });
+        if (resumesRes.ok && isMounted) {
+          setResumes(await resumesRes.json());
         }
       } catch (err) {
         console.error('Error loading initial profile:', err);
@@ -296,6 +326,8 @@ export default function UserProfile() {
         throw new Error(errorData.detail || `Failed to save profile (Status ${response.status})`);
       }
 
+      const savedProfile = await response.json();
+      setProfile((prev) => ({ ...prev, ...savedProfile }));
       setMessage({ type: 'success', text: 'Profile changes saved successfully!' });
     } catch (err) {
       console.error('Save Profile Error:', err);
@@ -343,6 +375,7 @@ export default function UserProfile() {
       }
 
       const uploadData = await uploadRes.json();
+      setResumes((currentResumes) => [uploadData, ...currentResumes]);
       const parsed = uploadData.parsed_data || {};
 
       const rawProjects = parsed.projects || profile.projects || [];
@@ -377,6 +410,45 @@ export default function UserProfile() {
     } finally {
       setParsing(false);
       if (e.target) e.target.value = '';
+    }
+  };
+
+  const handleDeleteResume = async () => {
+    if (!resumeToDelete) return;
+
+    setDeletingResume(true);
+    setMessage({ type: '', text: '' });
+
+    try {
+      let token = localStorage.getItem('token') || localStorage.getItem('access_token');
+      if (token && (token.startsWith('{') || token.startsWith('"'))) {
+        try {
+          const parsed = JSON.parse(token);
+          token = typeof parsed === 'object' ? parsed.access_token || parsed.token : parsed;
+        } catch {
+          token = token.replace(/"/g, '');
+        }
+      }
+
+      const response = await fetch(`${API_BASE_URL}/resume/${resumeToDelete.id}`, {
+        method: 'DELETE',
+        headers: { Authorization: `Bearer ${token.trim()}` },
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.detail || `Failed to delete resume (Status ${response.status})`);
+      }
+
+      setResumes((currentResumes) =>
+        currentResumes.filter((resume) => resume.id !== resumeToDelete.id)
+      );
+      setResumeToDelete(null);
+      setMessage({ type: 'success', text: 'Resume deleted successfully.' });
+    } catch (err) {
+      setMessage({ type: 'error', text: err.message || 'Failed to delete resume.' });
+    } finally {
+      setDeletingResume(false);
     }
   };
 
@@ -701,28 +773,125 @@ export default function UserProfile() {
             )}
 
             {activeTab === 'resumes' && (
-              <div className="bg-white border border-gray-200/80 rounded-2xl p-6 text-xs text-gray-500">
-                <h2 className="text-sm font-bold text-gray-800 mb-2">My Resumes</h2>
-                <p>Manage uploaded resume versions.</p>
+              <div className="bg-white border border-gray-200/80 rounded-2xl p-6 shadow-sm space-y-4">
+                <div className="flex items-center justify-between gap-4">
+                  <div>
+                    <h2 className="text-sm font-bold text-gray-800 mb-1">My Resumes</h2>
+                    <p className="text-xs text-gray-500">Manage uploaded resume versions.</p>
+                  </div>
+                  <button
+                    type="button"
+                    disabled={parsing}
+                    onClick={() => resumeUploadRef.current?.click()}
+                    className="px-3 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-semibold shadow-sm transition-all disabled:opacity-60"
+                  >
+                    {parsing ? 'Uploading...' : 'Upload Resume'}
+                  </button>
+                </div>
+                {resumes.length === 0 ? (
+                  <p className="text-xs text-gray-400">No resumes uploaded yet.</p>
+                ) : (
+                  <div className="space-y-3">
+                    {resumes.map((resume) => (
+                      <div key={resume.id} className="border border-gray-100 rounded-xl p-4 flex items-center justify-between gap-4">
+                        <div className="min-w-0">
+                          <h3 className="text-xs font-bold text-gray-800 truncate">{resume.original_filename}</h3>
+                          <p className="text-[11px] text-gray-400 mt-1">
+                            Uploaded {new Date(resume.uploaded_at).toLocaleDateString()}
+                          </p>
+                        </div>
+                        <div className="flex items-center gap-2 shrink-0">
+                          <span className="text-[11px] font-semibold text-emerald-700 bg-emerald-50 border border-emerald-100 rounded-lg px-2 py-1">
+                            Ready to use
+                          </span>
+                          <button
+                            type="button"
+                            onClick={() => setResumeToDelete(resume)}
+                            className="text-[11px] font-semibold text-rose-700 bg-rose-50 border border-rose-200 rounded-lg px-2 py-1 hover:bg-rose-100 transition-colors"
+                          >
+                            Delete
+                          </button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             )}
 
             {activeTab === 'applications' && (
-              <div className="bg-white border border-gray-200/80 rounded-2xl p-6 text-xs text-gray-500">
-                <h2 className="text-sm font-bold text-gray-800 mb-2">My Applications</h2>
-                <p>View internship application status track.</p>
+              <div className="bg-white border border-gray-200/80 rounded-2xl p-6 shadow-sm space-y-4">
+                <div>
+                  <h2 className="text-sm font-bold text-gray-800 mb-1">My Applications</h2>
+                  <p className="text-xs text-gray-500">View internship application status track.</p>
+                </div>
+                {applications.length === 0 ? (
+                  <p className="text-xs text-gray-400">No applications submitted yet.</p>
+                ) : (
+                  <div className="space-y-3">
+                    {applications.map((application) => (
+                      <div key={application.id} className="border border-gray-100 rounded-xl p-4 flex items-center justify-between gap-4">
+                        <div className="min-w-0">
+                          <h3 className="text-xs font-bold text-gray-800 truncate">{application.role_title}</h3>
+                          <p className="text-xs text-gray-500 mt-1">{application.company}</p>
+                          <p className="text-[11px] text-gray-400 mt-2">Resume: {application.resume_filename}</p>
+                        </div>
+                        <div className="text-right shrink-0">
+                          <span className="inline-flex px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 text-[10px] font-semibold border border-emerald-200">
+                            Submitted
+                          </span>
+                          <p className="text-[10px] text-gray-400 mt-2">
+                            {new Date(application.submitted_at).toLocaleDateString()}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             )}
 
             {activeTab === 'settings' && (
-              <div className="bg-white border border-gray-200/80 rounded-2xl p-6 text-xs text-gray-500">
-                <h2 className="text-sm font-bold text-gray-800 mb-2">Settings</h2>
-                <p>Manage security and account configuration.</p>
-              </div>
-            )}
+  <AccountSettings 
+    token={localStorage.getItem('token') || localStorage.getItem('access_token')} 
+    onLogout={() => {
+      localStorage.clear();
+      window.location.href = '/login'; // Or your app's logout handler
+    }} 
+  />
+)}
           </div>
         </div>
       </div>
+
+      {resumeToDelete && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4">
+          <div className="w-full max-w-md rounded-2xl bg-white p-6 shadow-xl" role="dialog" aria-modal="true" aria-labelledby="delete-resume-title">
+            <h2 id="delete-resume-title" className="text-base font-bold text-gray-900">Delete resume?</h2>
+            <p className="mt-2 text-sm text-gray-600">
+              Are you sure you want to delete '{resumeToDelete.original_filename}'?
+            </p>
+            <div className="mt-6 flex justify-end gap-3">
+              <button
+                type="button"
+                disabled={deletingResume}
+                onClick={() => setResumeToDelete(null)}
+                className="rounded-xl border border-gray-200 px-4 py-2 text-xs font-semibold text-gray-700 hover:bg-gray-50 disabled:opacity-60"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                disabled={deletingResume}
+                onClick={handleDeleteResume}
+                className="rounded-xl bg-rose-600 px-4 py-2 text-xs font-semibold text-white hover:bg-rose-700 disabled:opacity-60"
+              >
+                {deletingResume ? 'Deleting...' : 'Delete'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

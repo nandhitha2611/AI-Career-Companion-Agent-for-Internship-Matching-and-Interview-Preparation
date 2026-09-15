@@ -4,6 +4,7 @@ from pathlib import Path
 
 from fastapi import APIRouter, Depends, File, HTTPException, UploadFile, status
 from fastapi.responses import FileResponse
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
 import crud, schemas
@@ -138,6 +139,39 @@ def list_my_resumes(
                 r.parsed_data["education"] = []
 
     return resumes
+
+
+@router.delete("/{resume_id}", status_code=status.HTTP_204_NO_CONTENT)
+def delete_my_resume(
+    resume_id: uuid.UUID,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    resume = crud.get_resume_by_user(
+        db=db, resume_id=resume_id, user_id=current_user.id
+    )
+    if not resume:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="Resume not found"
+        )
+
+    stored_file_path = Path(resume.file_path)
+    try:
+        crud.delete_resume(db=db, resume=resume)
+    except IntegrityError:
+        db.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail="This resume cannot be deleted because it is linked to an application.",
+        )
+
+    try:
+        stored_file_path.unlink(missing_ok=True)
+    except OSError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Resume record deleted, but the stored file could not be removed.",
+        ) from exc
 
 
 @router.get("/{resume_id}/download")

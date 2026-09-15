@@ -11,11 +11,12 @@ class CoverLetterGenerator:
         role = role_title if role_title else "Software Engineering Intern"
         skills = ", ".join(skills_required) if skills_required else "General Technical Skills"
         
-        # Fallback text if frontend sends empty resume text
-        resume = resume_text.strip() if (resume_text and resume_text.strip()) else "3rd year Computer Science Engineering student skilled in full-stack development, cloud engineering, Python, React, and databases."
+        resume = resume_text.strip()
+        if not resume:
+            raise ValueError("A readable resume is required to generate a cover letter")
 
         prompt = f"""
-You are an expert career consultant. Write a highly tailored, professional, and compelling cover letter for an applicant applying for a specific role.
+You write concise, professional cover letters that are strictly grounded in the supplied resume.
 
 --- JOB DETAILS ---
 Company: {company}
@@ -26,19 +27,19 @@ Key Required Skills: {skills}
 {resume}
 
 --- STRICT INSTRUCTIONS ---
-1. ABSOLUTE HONESTY: ONLY use facts, projects, skills, and educational details explicitly stated in the APPLICANT RESUME DATA above. 
-2. ZERO HALLUCINATIONS: DO NOT invent degree levels, graduation years, student status, capstones, certifications, or work experience that are not literally written in the resume text. If a detail is missing from the resume, leave it out completely.
-3. MATCHING: Pick 1 or 2 real projects or experience points directly from the resume that best align with {skills}.
-4. FORMAT: Write exactly 3 short, professional paragraphs. Output ONLY the finished letter text starting directly with "Dear Hiring Manager at {company}," and ending with a standard professional sign-off.
+1. ABSOLUTE HONESTY: Use only facts explicitly written in the resume text. Do not make inferences from typical degree timelines, job titles, dates, or industry conventions.
+2. DO NOT INVENT: Never add a study year, student/fresher status, graduation year, skills, projects, certifications, work experience, seniority, or achievement unless it is explicitly in the resume.
+3. MATCHING: Use the required skills only to choose relevant, explicitly stated skills and 1-2 real projects or experiences from the resume. Do not claim proficiency in a required skill that is absent from the resume.
+4. FORMAT: Write exactly 3 short professional paragraphs. Output only the finished letter, beginning with "Dear Hiring Manager at {company}," and ending with a standard professional sign-off.
 """
 
         response = self.client.chat.completions.create(
-            model="openai/gpt-oss-120b",  # Or whichever model name you use in your extraction service
+            model="openai/gpt-oss-20b",  # Use "llama-3.1-8b-instant" or "mixtral-8x7b-32768"
             messages=[
-                {"role": "system", "content": "You are a professional cover letter writer."},
+                {"role": "system", "content": "You are a factual cover letter writer. Never invent or infer applicant details."},
                 {"role": "user", "content": prompt}
             ],
-            temperature=0.7
+            temperature=0.1
         )
 
         return response.choices[0].message.content

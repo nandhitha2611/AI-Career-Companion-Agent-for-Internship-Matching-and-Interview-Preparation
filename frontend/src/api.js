@@ -22,6 +22,9 @@ export const loginUser = (email, password) => {
 export const registerUser = (data) =>
   axios.post(`${API_BASE}/auth/register`, data);
 
+export const resetPassword = (data) =>
+  axios.post(`${API_BASE}/auth/reset-password`, data);
+
 // Resumes
 export const uploadResume = (formData) =>
   axios.post(`${API_BASE}/resume/upload`, formData, {
@@ -30,6 +33,9 @@ export const uploadResume = (formData) =>
 
 export const getResumes = () =>
   axios.get(`${API_BASE}/resume/`, { headers: getAuthHeader() });
+
+export const deleteResume = (resumeId) =>
+  axios.delete(`${API_BASE}/resume/${resumeId}`, { headers: getAuthHeader() });
 
 export const downloadResume = (resumeId) =>
   window.open(`${API_BASE}/resume/${resumeId}/download`, '_blank');
@@ -48,6 +54,9 @@ export const matchInternships = (resumeId) => {
 
 export const applyToInternship = (applicationData) =>
   axios.post(`${API_BASE}/applications/`, applicationData, { headers: getAuthHeader() });
+
+export const getApplications = () =>
+  axios.get(`${API_BASE}/applications/`, { headers: getAuthHeader() });
 
 export const generateCoverLetterApi = (data) => {
   return axios.post(

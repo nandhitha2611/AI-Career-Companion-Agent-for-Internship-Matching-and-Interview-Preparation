@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import InternshipDetail from './InternshipDetail';
+import { getResumes } from '../api';
 
 const API_BASE_URL = 'http://localhost:8000';
 
@@ -11,27 +12,27 @@ export default function MatchInternships() {
   const [statusMessage, setStatusMessage] = useState('');
   const [matchedInternships, setMatchedInternships] = useState([]);
   const [selectedInternship, setSelectedInternship] = useState(null);
+  const [uploadedResume, setUploadedResume] = useState(null);
+  const [savedResumes, setSavedResumes] = useState([]);
+  const [selectedSavedResumeId, setSelectedSavedResumeId] = useState('');
   const [error, setError] = useState(null);
+
+  useEffect(() => {
+    getResumes()
+      .then((response) => setSavedResumes(response.data || []))
+      .catch(() => setSavedResumes([]));
+  }, []);
 
   // If user clicked an internship, switch to detailed view
   if (selectedInternship) {
     return (
       <InternshipDetail
         internship={selectedInternship}
+        selectedResume={uploadedResume}
         onBack={() => setSelectedInternship(null)}
       />
     );
   }
-
-  if (selectedInternship) {
-  return (
-    <InternshipDetail
-      internship={selectedInternship}
-      selectedFile={selectedFile}
-      onBack={() => setSelectedInternship(null)}
-    />
-  );
-}
 
   const handleFileSelect = (file) => {
     if (!file) return;
@@ -48,7 +49,7 @@ export default function MatchInternships() {
   };
 
   const handleMatch = async () => {
-    if (!selectedFile && !resumeText.trim()) return;
+    if (!selectedFile && !resumeText.trim() && !selectedSavedResumeId) return;
 
     setIsLoading(true);
     setError(null);
@@ -57,36 +58,42 @@ export default function MatchInternships() {
       const token = localStorage.getItem('token') || localStorage.getItem('access_token');
       const authHeaders = token ? { 'Authorization': `Bearer ${token}` } : {};
 
-      let resumeId = null;
+      let resumeId = selectedSavedResumeId || null;
 
-      setStatusMessage('Parsing resume via backend service...');
-      const formData = new FormData();
-      
-      if (selectedFile) {
-        formData.append('file', selectedFile);
+      if (selectedSavedResumeId) {
+        setUploadedResume(savedResumes.find((resume) => resume.id === selectedSavedResumeId) || null);
       } else {
-        const textBlob = new Blob([resumeText], { type: 'text/plain' });
-        formData.append('file', textBlob, 'resume.txt');
-      }
+        setStatusMessage('Parsing resume via backend service...');
+        const formData = new FormData();
 
-      const uploadRes = await fetch(`${API_BASE_URL}/resume/upload`, {
-        method: 'POST',
-        headers: { ...authHeaders },
-        body: formData,
-      });
-
-      if (!uploadRes.ok) {
-        if (uploadRes.status === 401) {
-          throw new Error('Authentication required. Please log in to run matching.');
+        if (selectedFile) {
+          formData.append('file', selectedFile);
+        } else {
+          const textBlob = new Blob([resumeText], { type: 'text/plain' });
+          formData.append('file', textBlob, 'resume.txt');
         }
-        throw new Error('Failed to process resume file on backend.');
-      }
 
-      const uploadData = await uploadRes.json();
-      resumeId = uploadData.id || uploadData.resume_id;
+        const uploadRes = await fetch(`${API_BASE_URL}/resume/upload`, {
+          method: 'POST',
+          headers: { ...authHeaders },
+          body: formData,
+        });
 
-      if (!resumeId) {
-        throw new Error('Backend did not return a valid resume ID.');
+        if (!uploadRes.ok) {
+          if (uploadRes.status === 401) {
+            throw new Error('Authentication required. Please log in to run matching.');
+          }
+          throw new Error('Failed to process resume file on backend.');
+        }
+
+        const uploadData = await uploadRes.json();
+        resumeId = uploadData.id || uploadData.resume_id;
+
+        if (!resumeId) {
+          throw new Error('Backend did not return a valid resume ID.');
+        }
+        setUploadedResume(uploadData);
+        setSavedResumes((currentResumes) => [uploadData, ...currentResumes]);
       }
 
       setStatusMessage('Matching against internship database...');
@@ -161,6 +168,26 @@ export default function MatchInternships() {
             </label>
           </div>
 
+          <div className="flex items-center gap-3">
+            <span className="text-xs font-semibold text-gray-600 whitespace-nowrap">Use saved resume</span>
+            <select
+              value={selectedSavedResumeId}
+              onChange={(e) => {
+                setSelectedSavedResumeId(e.target.value);
+                if (e.target.value) {
+                  setSelectedFile(null);
+                  setResumeText('');
+                }
+              }}
+              className="flex-1 bg-white border border-gray-200 rounded-xl px-3 py-2 text-xs text-gray-700 outline-none focus:border-blue-500"
+            >
+              <option value="">Upload or paste a new resume</option>
+              {savedResumes.map((resume) => (
+                <option key={resume.id} value={resume.id}>{resume.original_filename}</option>
+              ))}
+            </select>
+          </div>
+
           <div className="relative text-center">
             <span className="bg-white px-3 text-[11px] text-gray-400 uppercase font-medium">
               OR PASTE RESUME TEXT BELOW
@@ -179,12 +206,14 @@ export default function MatchInternships() {
           />
 
           <div className="flex justify-between items-center pt-2">
-            {(selectedFile || resumeText) ? (
+            {(selectedFile || resumeText || selectedSavedResumeId) ? (
               <button
                 type="button"
                 onClick={() => {
                   setSelectedFile(null);
                   setResumeText('');
+                  setSelectedSavedResumeId('');
+                  setUploadedResume(null);
                   setMatchedInternships([]);
                 }}
                 className="text-xs text-red-500 hover:text-red-600 font-medium"
@@ -196,9 +225,9 @@ export default function MatchInternships() {
             <button
               type="button"
               onClick={handleMatch}
-              disabled={(!selectedFile && !resumeText.trim()) || isLoading}
+            disabled={(!selectedFile && !resumeText.trim() && !selectedSavedResumeId) || isLoading}
               className={`px-5 py-2.5 rounded-xl text-xs font-semibold text-white transition-all shadow-sm ${
-                (!selectedFile && !resumeText.trim()) || isLoading
+                (!selectedFile && !resumeText.trim() && !selectedSavedResumeId) || isLoading
                   ? 'bg-blue-300 cursor-not-allowed'
                   : 'bg-blue-600 hover:bg-blue-700'
               }`}

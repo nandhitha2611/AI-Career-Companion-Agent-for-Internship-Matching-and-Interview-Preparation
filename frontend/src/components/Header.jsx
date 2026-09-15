@@ -2,6 +2,8 @@
 import React from 'react';
 
 export default function Header({ activeTab, setActiveTab, isAuthenticated, user, onAuthClick }) {
+  const navTabs = ['home', 'internships', 'ats-score', 'match-internships', 'interview-prep'];
+
   return (
     <header className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -26,7 +28,7 @@ export default function Header({ activeTab, setActiveTab, isAuthenticated, user,
 
         {/* NAVIGATION LINKS */}
         <nav className="hidden md:flex items-center gap-2">
-          {['home', 'internships', 'ats-score', 'match-internships'].map((tab) => (
+          {navTabs.map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
@@ -67,7 +69,6 @@ export default function Header({ activeTab, setActiveTab, isAuthenticated, user,
                   : 'bg-slate-100/80 hover:bg-slate-100 border-slate-200'
               }`}
             >
-              {/* Profile Icon SVG */}
               <div className="w-7 h-7 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold">
                 {user?.name ? user.name.charAt(0).toUpperCase() : 'U'}
               </div>

@@ -146,6 +146,8 @@ export default function ResumeManager({ onLogout }) {
         internship_id: selectedInternship.id,
         cover_letter: coverLetter,
         resume_id: resumes[0]?.id || null,
+        role_title: selectedInternship.role_title || selectedInternship.title,
+        company: selectedInternship.company || selectedInternship.company_name,
       });
       alert('Application submitted successfully!');
       setActiveTab('home');

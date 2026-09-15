@@ -86,6 +86,8 @@ def create_or_update_profile(
     profile.projects = data.get("projects", [])
     profile.internships = data.get("internships", [])
     profile.certifications = data.get("certifications", [])
+    profile.languages = data.get("languages", [])
+    profile.achievements = data.get("achievements", [])
 
     db.commit()
     db.refresh(profile)
@@ -133,6 +135,52 @@ def get_resumes_by_user(db: Session, user_id: uuid.UUID) -> list[models.Resume]:
 
 def get_resume_by_id(db: Session, resume_id: uuid.UUID) -> models.Resume | None:
     return db.query(models.Resume).filter(models.Resume.id == resume_id).first()
+
+
+def get_resume_by_user(
+    db: Session, resume_id: uuid.UUID, user_id: uuid.UUID
+) -> models.Resume | None:
+    return (
+        db.query(models.Resume)
+        .filter(models.Resume.id == resume_id, models.Resume.user_id == user_id)
+        .first()
+    )
+
+
+def delete_resume(db: Session, resume: models.Resume) -> None:
+    db.delete(resume)
+    db.commit()
+
+
+def create_application(
+    db: Session,
+    user_id: uuid.UUID,
+    application_data: schemas.InternshipApplicationCreate,
+    resume: models.Resume,
+) -> models.InternshipApplication:
+    application = models.InternshipApplication(
+        user_id=user_id,
+        resume_id=resume.id,
+        internship_id=application_data.internship_id,
+        role_title=application_data.role_title,
+        company=application_data.company,
+        cover_letter=application_data.cover_letter,
+    )
+    db.add(application)
+    db.commit()
+    db.refresh(application)
+    return application
+
+
+def get_applications_by_user(
+    db: Session, user_id: uuid.UUID
+) -> list[models.InternshipApplication]:
+    return (
+        db.query(models.InternshipApplication)
+        .filter(models.InternshipApplication.user_id == user_id)
+        .order_by(models.InternshipApplication.submitted_at.desc())
+        .all()
+    )
 
 def update_user(db: Session, user: models.User, update_data: schemas.UserUpdate):
     if update_data.full_name is not None:

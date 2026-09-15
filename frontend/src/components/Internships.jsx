@@ -1,7 +1,11 @@
 import React, { useState, useMemo } from 'react';
 import rawData from "../../../data/internships.json";
+import InternshipDetail from './InternshipDetail';
 
 export default function Internships({ data }) {
+  // Selected internship state for showing detailed view
+  const [selectedInternship, setSelectedInternship] = useState(null);
+
   const dataset = useMemo(() => {
     if (Array.isArray(data) && data.length > 0) return data;
     if (Array.isArray(rawData)) return rawData;
@@ -60,6 +64,16 @@ export default function Internships({ data }) {
     setPartTime(false);
     setMinStipend(0);
   };
+
+  // Switch to detailed view if an internship is clicked (same logic as MatchInternships)
+  if (selectedInternship) {
+    return (
+      <InternshipDetail
+        internship={selectedInternship}
+        onBack={() => setSelectedInternship(null)}
+      />
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
@@ -187,11 +201,12 @@ export default function Internships({ data }) {
               return (
                 <div
                   key={item.id || idx}
-                  className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow relative"
+                  onClick={() => setSelectedInternship(item)}
+                  className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all cursor-pointer relative hover:border-blue-200"
                 >
                   <div className="flex justify-between items-start mb-3">
                     <div>
-                      <h3 className="text-base font-bold text-gray-800 hover:text-blue-600 transition-colors cursor-pointer">
+                      <h3 className="text-base font-bold text-gray-800 hover:text-blue-600 transition-colors">
                         {item.role_title || item.title || 'Internship Title'}
                       </h3>
                       <div className="flex items-center gap-2 mt-1">
