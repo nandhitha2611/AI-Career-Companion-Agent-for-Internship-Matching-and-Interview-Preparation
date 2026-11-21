@@ -126,7 +126,7 @@ AI-Internship-Agent/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/nandhitha2611/AI-Internship-Agent.git
+git clone https://github.com/nandhitha2611/AI-Career-Companion-Agent-for-Internship-Matching-and-Interview-Preparation
 cd AI-Internship-Agent
 ```
 
